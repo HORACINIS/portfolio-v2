@@ -5,6 +5,7 @@ import Typography from '@material-ui/core/Typography';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import useScrollTrigger from '@material-ui/core/useScrollTrigger';
 import Button from '@material-ui/core/Button';
+import MenuIcon from '@material-ui/icons/Menu';
 import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles((theme) => ({
@@ -49,6 +50,9 @@ const Navbar = () => {
               <Button className={classes.menuButton} color="inherit">Skills</Button>
               <Button className={classes.menuButton} color="inherit">About Me</Button>
               <Button className={classes.menuButton} color="inherit">Contact Me</Button>
+              <Button color='inherit'>
+              <MenuIcon className={classes.menuButton} />
+              </Button>
             </section>
           </Toolbar>
         </AppBar>
