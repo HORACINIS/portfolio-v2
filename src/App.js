@@ -6,7 +6,7 @@ import Skills from './components/skills/Skills';
 function App() {
 
   return (
-    <div>
+    <div style={{background: 'radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(0,0,0,1) 100%)'}}>
       <header >
         <Navbar />
       </header>

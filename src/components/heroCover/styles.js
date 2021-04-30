@@ -15,17 +15,17 @@ export const useStyles = makeStyles((theme) => ({
     height: theme.spacing(20),
     marginLeft: 'auto',
     marginRight: 'auto',
-    marginTop: 40,
+    marginTop: 50,
     filter: 'grayScale(90%)'
-  }
+  },
 
-  // welcomeText: {
-  //   color: 'purple',
-  //   fontSize: '10vw',
-  // },
-  // introText: {
-  //   fontSize: '8vw'
-  // }
+  welcomeText: {
+    marginBottom: 20,
+    color: 'white'
+  },
+  introText: {
+    color: 'white'
+  }
 
 }))
 
