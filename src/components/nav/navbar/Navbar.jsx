@@ -38,7 +38,7 @@ const Navbar = () => {
               </section>
             )
           }
-          < DrawerComponent openDrawer={openDrawer} setOpenDrawer={setOpenDrawer} />
+          < DrawerComponent openDrawer={openDrawer} setOpenDrawer={setOpenDrawer} isMatch={isMatch} />
         </Toolbar>
       </AppBar>
       <Toolbar />

@@ -5,13 +5,13 @@ import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 
-const DrawerComponent = ({ openDrawer, setOpenDrawer }) => {
+const DrawerComponent = ({ openDrawer, setOpenDrawer, isMatch }) => {
 
   return (
     <Drawer
       anchor='right'
       onClose={() => { setOpenDrawer(false) }}
-      open={openDrawer}
+      open={isMatch && openDrawer}
     >
 
       <List>
