@@ -5,6 +5,7 @@ import Typography from '@material-ui/core/Typography';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Button from '@material-ui/core/Button';
 import MenuIcon from '@material-ui/icons/Menu';
+import DrawerComponent from './drawer/Drawer';
 import { useStyles } from './styles';
 
 const Navbar = () => {
@@ -21,9 +22,10 @@ const Navbar = () => {
             <Button className={classes.menuButton} color="inherit">Skills</Button>
             <Button className={classes.menuButton} color="inherit">About Me</Button>
             <Button className={classes.menuButton} color="inherit">Contact Me</Button>
-            <Button color='inherit'>
+            {/* <Button color='inherit'>
               <MenuIcon className={classes.menuButton} />
-            </Button>
+            </Button> */}
+            <DrawerComponent />
           </section>
         </Toolbar>
       </AppBar>
