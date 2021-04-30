@@ -20,6 +20,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const Navbar = () => {
+
   const classes = useStyles();
   return (
     <React.Fragment>
