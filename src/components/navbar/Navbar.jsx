@@ -5,19 +5,7 @@ import Typography from '@material-ui/core/Typography';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Button from '@material-ui/core/Button';
 import MenuIcon from '@material-ui/icons/Menu';
-import { makeStyles } from '@material-ui/core/styles';
-
-const useStyles = makeStyles((theme) => ({
-  root: {
-    flexGrow: 1,
-  },
-  menuButton: {
-    marginRight: theme.spacing(2),
-  },
-  title: {
-    flexGrow: 1,
-  },
-}));
+import { useStyles } from './styles';
 
 const Navbar = () => {
 
@@ -25,7 +13,7 @@ const Navbar = () => {
   return (
     <React.Fragment>
       <CssBaseline />
-      <AppBar >
+      <AppBar className={classes.root}>
         <Toolbar>
           <Typography className={classes.title} variant="h6">Horacio Moran</Typography>
           <section>

@@ -24,9 +24,7 @@ const HeroCover = () => {
         >
           I'm Horacio Moran, junior Software Developer.
         </Typography>
-        <Grid>
-          <Avatar alt="Horacio" src={avatar} className={classes.avatar} />
-        </Grid>
+        <Avatar alt="Horacio" src={avatar} className={classes.avatar} />
       </Grid>
     </section>
   )
