@@ -1,14 +1,11 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Drawer from '@material-ui/core/Drawer';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 
-const DrawerComponent = () => {
-
-  const [openDrawer, setOpenDrawer] = useState(true);
-
+const DrawerComponent = ({ openDrawer, setOpenDrawer }) => {
 
   return (
     <Drawer
