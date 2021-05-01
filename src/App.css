@@ -1,3 +1,11 @@
+body {
+  /* overflow: hidden; */
+}
+
+.container {
+  background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(0, 0, 0, 1) 100%);
+}
+
 section {
   display: flex;
   flex-direction: column;
@@ -6,4 +14,5 @@ section {
   text-align: center;
   width: 100%;
   height: 100vh;
+  scroll-snap-align: center;
 }

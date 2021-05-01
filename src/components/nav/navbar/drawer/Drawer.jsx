@@ -54,10 +54,7 @@ const DrawerComponent = ({ openDrawer, setOpenDrawer, isMatch }) => {
             </ListItemIcon>
           </Button>
         </ListItem>
-
-
       </List>
-
     </Drawer>
   )
 }

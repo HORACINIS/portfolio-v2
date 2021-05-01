@@ -11,8 +11,8 @@ import './App.css';
 function App() {
 
   return (
-    <div style={{ background: 'radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(0,0,0,1) 100%)' }}>
-      <header id='home'>
+    <div className='container'>
+      <header>
         <Navbar />
       </header>
 

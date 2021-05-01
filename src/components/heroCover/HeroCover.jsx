@@ -11,7 +11,7 @@ import { useStyles } from './styles';
 const HeroCover = () => {
   const classes = useStyles();
   return (
-    <section className={classes.root}>
+    <section className={classes.root} id='home'>
       <Grid container justify='center' direction='column'>
         <Typography
           className={classes.welcomeText}
