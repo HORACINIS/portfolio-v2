@@ -2,13 +2,16 @@ import { makeStyles } from '@material-ui/core/styles'
 
 
 export const useStyles = makeStyles((theme) => ({
+  // root: {
+  //   height: '80vh',
+  //   display: 'flex',
+  //   justifyContent: 'center',
+  //   alignItems: 'center',
+  //   marginBottom: '15vh',
+  //   margin: theme.spacing(1),
+  // },
   root: {
-    height: '80vh',
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    marginBottom: '15vh',
-    margin: theme.spacing(1),
+    marginTop: '-50px'
   },
   avatar: {
     width: theme.spacing(20),
@@ -16,7 +19,7 @@ export const useStyles = makeStyles((theme) => ({
     marginLeft: 'auto',
     marginRight: 'auto',
     marginTop: 50,
-    marginBottom: 130,
+    marginBottom: 100,
     verticalAlign: 'middle',
     filter: 'grayScale(90%)'
   },
