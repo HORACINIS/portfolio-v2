@@ -30,12 +30,12 @@ const Navbar = () => {
               <MenuIcon className={classes.menuButton} />
             </Button>
             : (
-              <section>
+              <div>
                 <Button href='#projects' className={classes.menuButton} color="inherit">Projects</Button>
                 <Button href='#skills' className={classes.menuButton} color="inherit">Skills</Button>
                 <Button href='#about' className={classes.menuButton} color="inherit">About Me</Button>
                 <Button href='#contact' className={classes.menuButton} color="inherit">Contact Me</Button>
-              </section>
+              </div>
             )
           }
           < DrawerComponent openDrawer={openDrawer} setOpenDrawer={setOpenDrawer} isMatch={isMatch} />
