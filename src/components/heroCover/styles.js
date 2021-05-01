@@ -16,17 +16,24 @@ export const useStyles = makeStyles((theme) => ({
     marginLeft: 'auto',
     marginRight: 'auto',
     marginTop: 50,
+    marginBottom: 130,
+    verticalAlign: 'middle',
     filter: 'grayScale(90%)'
   },
-
   welcomeText: {
     marginBottom: 20,
     color: 'white'
   },
   introText: {
     color: 'white'
+  },
+  heroCoverIconsContainer: {
+    color: 'rgb(219,18,18)',
+    // marginTop: 130,
+  },
+  heroCoverIcons: {
+    fontSize: 40
   }
-
 }))
 
 

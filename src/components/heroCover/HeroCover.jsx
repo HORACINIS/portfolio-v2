@@ -3,7 +3,10 @@ import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
 import Avatar from '@material-ui/core/Avatar';
 import avatar from '../../images/avatar.jpg';
-import { useStyles } from './styles'
+import GitHubIcon from '@material-ui/icons/GitHub';
+import TwitterIcon from '@material-ui/icons/Twitter';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import { useStyles } from './styles';
 
 const HeroCover = () => {
   const classes = useStyles();
@@ -25,6 +28,17 @@ const HeroCover = () => {
           I'm Horacio Moran, junior Software Developer.
         </Typography>
         <Avatar alt="Horacio" src={avatar} className={classes.avatar} />
+        <Grid justify='center' item container className={classes.heroCoverIconsContainer}>
+          <Grid item>
+            <GitHubIcon className={classes.heroCoverIcons} />
+          </Grid>
+          <Grid item>
+            <TwitterIcon className={classes.heroCoverIcons} />
+          </Grid>
+          <Grid item>
+            <LinkedInIcon className={classes.heroCoverIcons} />
+          </Grid>
+        </Grid>
       </Grid>
     </section>
   )
