@@ -14,12 +14,15 @@ import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    maxWidth: 445,
+    // maxWidth: 545,
+    maxWidth: 745,
+    margin: 20,
+    flexBasis: '0%'
   },
   media: {
     height: 0,
-    // paddingTop: '56.25%', // 16:9
-    paddingTop: '60.25%', // 16:9
+    paddingTop: '56.25%', // 16:9
+    // paddingTop: '60.25%', // 16:9
 
   },
   expand: {
