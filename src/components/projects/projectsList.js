@@ -25,7 +25,7 @@ export const projectsList = [
     intro: 'Full stack two-sided marketplace created with Rails',
     body: 'Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah.',
     img: el_cartel,
-    iconsTechUsed: [html, css, ruby, rails, bootstrap, aws, stripe],
+    iconsTechUsed: [html, ruby, rails, bootstrap, aws, stripe],
     siteLive: 'https://elcartel.herokuapp.com/',
     repoURL: 'https://github.com/HORACINIS/el_carsales_marketplace'
 
