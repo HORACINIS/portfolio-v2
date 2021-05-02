@@ -21,11 +21,10 @@ const BottomNavbar = () => {
       showLabels
       className={classes.root}
     >
-      <BottomNavigationAction label='GitHub' icon={<GitHubIcon />} />
-      <BottomNavigationAction label='Twitter' icon={<TwitterIcon />} />
-      <BottomNavigationAction label='LinkedIn' icon={<LinkedInIcon />} />
-      <BottomNavigationAction label='Email' icon={<EmailIcon />} />
-
+      <BottomNavigationAction icon={<GitHubIcon className={classes.icons} />} />
+      <BottomNavigationAction icon={<TwitterIcon className={classes.icons} />} />
+      <BottomNavigationAction icon={<LinkedInIcon className={classes.icons} />} />
+      <BottomNavigationAction icon={<EmailIcon className={classes.icons} />} />
     </BottomNavigation>
   );
 }
