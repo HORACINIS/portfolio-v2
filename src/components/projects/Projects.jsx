@@ -7,13 +7,9 @@ const Projects = () => {
   return (
     <section id='projects' style={{ border: 'red solid 2px' }}>
       <h1>Projects</h1>
-      <Project />
-      {/* <Project />
-      <Project />
-      <Project /> */}
-
-
-
+      {projectsList.map((project) => (
+        <Project key={project.id} {...project} />
+      ))}
     </section>
   )
 }
