@@ -7,8 +7,8 @@ const Projects = () => {
   return (
     <section id='projects' style={{ border: 'red solid 2px' }}>
       <h1>Projects</h1>
-      {projectsList.map((project) => (
-        <Project key={project.id} {...project} />
+      {projectsList.map((project, index) => (
+        <Project key={index} {...project} />
       ))}
     </section>
   )

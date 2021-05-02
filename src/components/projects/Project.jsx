@@ -1,6 +1,7 @@
 import React from 'react';
 import clsx from 'clsx';
 import Card from '@material-ui/core/Card';
+// import CardActionArea from '@material-ui/core/CardActionArea';
 import CardHeader from '@material-ui/core/CardHeader';
 import CardMedia from '@material-ui/core/CardMedia';
 import CardContent from '@material-ui/core/CardContent';
@@ -42,7 +43,8 @@ const Project = ({ title, intro, body, img, iconsTechUsed }) => {
   };
 
   return (
-    <Card className={classes.root}>
+    <Card className={classes.root} raised>
+      {/* <CardActionArea> */}
       <CardHeader
         title={title} // title
         subheader={intro}    // subtitle 
@@ -57,14 +59,13 @@ const Project = ({ title, intro, body, img, iconsTechUsed }) => {
           {body}
         </Typography>
       </CardContent>
+      {/* </CardActionArea> */}
       <CardActions disableSpacing>
-
         {iconsTechUsed.map((icon, index) => ( // icon of tech used
-          <IconButton key={index} aria-label='FavoriteIcons'>
+          <IconButton key={index} aria-label='Tech used'>
             {icon}
           </IconButton>
         ))}
-
         <IconButton
           className={clsx(classes.expand, {
             [classes.expandOpen]: expanded,
