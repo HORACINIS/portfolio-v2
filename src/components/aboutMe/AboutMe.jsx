@@ -4,7 +4,7 @@ import profilePic from '../../images/mainPic.jpg';
 
 const AboutMe = () => {
   return (
-    <section id='about' style={tempStyle.wrapper}>
+    <section id='about' style={tempStyle.root}>
       <div style={tempStyle.testimonial}>
         <article>
           <h1 style={tempStyle.title}>About Me</h1>
