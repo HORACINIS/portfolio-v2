@@ -31,7 +31,7 @@ export const tempStyle = {
   textContent: {
     fontFamily: 'sans-serif',
     fontSize: '20px',
-    marginTop: '30px'
+    marginTop: '50px'
   },
   name: {
     textTransform: 'uppercase',

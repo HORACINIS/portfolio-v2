@@ -13,9 +13,9 @@ const AboutMe = () => {
             Lorem ipsum dolor sit amet consectetut conse dae nostrum quae, quaerat, ab tempora amet dolor esse nam facere quam omnis, nesciunt dolorem! Repellendus dolorum quo inventore quis illum, est quae iusto. Dolore optio quibusdam commodi, sequi corrupti natus adipisci laudantium hic?
           </blockquote>
           <h5 style={tempStyle.name}>Horacio</h5>
-          <p style={tempStyle.bottomText}>
+          {/* <p style={tempStyle.bottomText}>
             Lorem ipsum dolor sit amet consectetur.
-          </p>
+          </p> */}
         </article>
       </div>
     </section>

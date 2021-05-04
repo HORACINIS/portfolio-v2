@@ -11,15 +11,15 @@ export const useStyles = makeStyles((theme) => ({
   //   margin: theme.spacing(1),
   // },
   root: {
-    marginTop: '-50px'
+    // marginTop: '-50px'
   },
   avatar: {
     width: theme.spacing(20),
     height: theme.spacing(20),
     marginLeft: 'auto',
     marginRight: 'auto',
-    marginTop: 50,
-    marginBottom: 100,
+    marginTop: 130,
+    marginBottom: 80,
     verticalAlign: 'middle',
     filter: 'grayScale(90%)'
   },
