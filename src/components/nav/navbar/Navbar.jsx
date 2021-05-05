@@ -8,7 +8,7 @@ import MenuIcon from '@material-ui/icons/Menu';
 import DrawerComponent from './drawer/Drawer';
 import { useTheme } from '@material-ui/core/styles';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
-import { useStyles } from './styles';
+import { useStyles } from './NavbarStyles';
 
 const Navbar = () => {
 
