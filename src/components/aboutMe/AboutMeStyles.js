@@ -10,15 +10,20 @@ export const useStyles = makeStyles({
 
     color: 'white',
     backgroundPosition: 'center',
-    backgroundRepeat: 'noRepeat',
+    backgroundRepeat: 'no-repeat',
     backgroundSize: 'cover',
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
-    justifContent: 'center',
+    justifyContent: 'center',
     textAlign: 'center',
-    width: '100%',
-    minHeight: '95vh'
+    // width: '100%',
+    minHeight: '95vh',
+    padding: '10vh 0'
+  },
+  container: {
+    width: '90%',
+    height: '100%'
   },
   title: {
     fontSize: 50,
@@ -27,22 +32,24 @@ export const useStyles = makeStyles({
     letterSpacing: '1.5px'
   },
   profilePic: {
+    // marginTop: 80,
     height: 200,
     width: 200,
     border: 'solid 2px #fff',
     borderRadius: '50%',
     // marginTop: '60px',
-    marginTop: '40px',
+    marginTop: 80 
   },
   textContent: {
     fontFamily: 'sans-serif',
     fontSize: '20px',
+    // fontSize: '2vh',
     marginTop: '50px'
   },
   name: {
     textTransform: 'uppercase',
     fontSize: '30px',
-    marginTop: '30px',
+    // marginTop: '30px',
     letterSpacing: '1.5px'
   },
   bottomText: {
