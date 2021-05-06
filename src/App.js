@@ -9,7 +9,7 @@ import BottomNavbar from './components/nav/bottomNavbar/BottomNavbar';
 import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
 
 function App() {
-  const [darkMode, setDarkMode] = useState(true);
+  const [darkMode, setDarkMode] = useState(false);
 
   const darkTheme = createMuiTheme({
     palette: {
@@ -23,7 +23,12 @@ function App() {
   const lightTheme = createMuiTheme({
     palette: {
       type: 'light',
-      // primary: 
+      primary: {
+        main: '#ffb300',
+        light: '#ffe54c',
+        dark: '#c68400',
+        constrastText: '#000000'
+      }
     }
   })
 

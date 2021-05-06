@@ -23,11 +23,11 @@ const Project = ({ title, intro, body, img, iconsTechUsed, siteLive, repoURL }) 
   };
 
   return (
-    <Card className={classes.root} raised>
+    <Card className={classes.root} raised> 
       {/* <CardActionArea> */}
       <CardHeader
         title={title} // title
-        subheader={intro}    // subtitle 
+        subheader={intro}  // subtitle 
       />
       <CardMedia
         className={classes.media}

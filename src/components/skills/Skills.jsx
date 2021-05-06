@@ -1,6 +1,7 @@
 import React from 'react';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
+import Typography from '@material-ui/core/Typography';
 import { useStyles } from './SkillsStyles';
 
 const Skills = () => {
@@ -8,7 +9,7 @@ const Skills = () => {
   return (
     <Paper>
       <Grid className={classes.root} id='skills' style={{ border: 'solid black 2px' }}>
-        <h1>Skills</h1>
+        <Typography className={classes.title} component='h1'>Skills</Typography>
       </Grid>
     </Paper>
   )

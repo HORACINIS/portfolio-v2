@@ -6,10 +6,10 @@ const ThemeSwitch = ({ darkMode, setDarkMode }) => {
     <Switch
       checked={darkMode}
       onChange={() => setDarkMode(!darkMode)}
-      color="primary"
+      color='secondary'
       inputProps={{ 'aria-label': 'primary checkbox' }}
     />
   )
 }
 
-export default ThemeSwitch
+export default ThemeSwitch;
