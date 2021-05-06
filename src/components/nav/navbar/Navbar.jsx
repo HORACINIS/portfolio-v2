@@ -25,7 +25,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
       <CssBaseline />
       <AppBar className={classes.root}>
         <Toolbar>
-          <Typography className={classes.name} variant="h6"><Button href='#home'>Horacio M.</Button></Typography>
+          <Typography className={classes.namePosition} variant="h6"><Button className={classes.nameColour} href='#home'>Horacio M.</Button></Typography>
           {isMatch ?
             <Button color='inherit' onClick={() => setOpenDrawer(!openDrawer)}>
               <MenuIcon className={classes.menuButton} />
