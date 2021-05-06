@@ -6,12 +6,13 @@ import avatar from '../../images/avatar.jpg';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import TwitterIcon from '@material-ui/icons/Twitter';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
-import { useStyles } from './styles';
+import Paper from '@material-ui/core/Paper';
+import { useStyles } from './HeroCoverStyles';
 
 const HeroCover = () => {
   const classes = useStyles();
   return (
-    <section className={classes.root} id='home'>
+    <Paper className={classes.root} id='home'>
       <Grid container justify='center' direction='column'>
         <Typography
           className={classes.welcomeText}
@@ -40,7 +41,7 @@ const HeroCover = () => {
           </Grid>
         </Grid>
       </Grid>
-    </section>
+    </Paper>
   )
 }
 
