@@ -5,8 +5,8 @@ import { ImHtmlFive } from 'react-icons/im';
 import { FaCcStripe } from 'react-icons/fa';
 
 // project images
-import el_cartel from './images/el_cartel.png';
-import cartel_bigger from './images/cartel_bigger.jpg';
+import el_cartel from '../images/el_cartel.png';
+import cartel_bigger from '../images/cartel_bigger.jpg';
 
 // icon variable to be used with the object below
 const html = <ImHtmlFive />;

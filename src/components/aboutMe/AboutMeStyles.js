@@ -21,10 +21,6 @@ export const useStyles = makeStyles({
     minHeight: '95vh',
     padding: '10vh 0'
   },
-  container: {
-    width: '90%',
-    height: '100%'
-  },
   title: {
     fontSize: 50,
     fontWeight: 800,
@@ -38,7 +34,7 @@ export const useStyles = makeStyles({
     border: 'solid 2px #fff',
     borderRadius: '50%',
     // marginTop: '60px',
-    marginTop: 80 
+    marginTop: 80
   },
   textContent: {
     fontFamily: 'sans-serif',
