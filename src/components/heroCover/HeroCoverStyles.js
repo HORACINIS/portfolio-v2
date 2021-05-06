@@ -31,10 +31,10 @@ export const useStyles = makeStyles((theme) => ({
   },
   welcomeText: {
     marginBottom: 20,
-    color: 'white'
+    // color: 'white'
   },
   introText: {
-    color: 'white'
+    // color: 'white'
   },
   heroCoverIconsContainer: {
     color: 'rgb(219,18,18)',
