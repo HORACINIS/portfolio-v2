@@ -8,9 +8,6 @@ import ContactMe from './components/contactMe/ContactMe';
 import BottomNavbar from './components/nav/bottomNavbar/BottomNavbar';
 import Switch from '@material-ui/core/Switch';
 import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
-import './App.css';
-
-
 
 function App() {
   const [darkMode, setDarkMode] = useState(true);
