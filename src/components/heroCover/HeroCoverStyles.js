@@ -1,6 +1,5 @@
 import { makeStyles } from '@material-ui/core/styles'
 
-
 export const useStyles = makeStyles((theme) => ({
   // root: {
   //   height: '80vh',
@@ -11,7 +10,14 @@ export const useStyles = makeStyles((theme) => ({
   //   margin: theme.spacing(1),
   // },
   root: {
-    // marginTop: '-50px'
+    // marginTop: '-50px',
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    justifyContent: 'center',
+    textAlign: 'center',
+    width: '100%',
+    minHeight: '95vh',
   },
   avatar: {
     width: theme.spacing(20),

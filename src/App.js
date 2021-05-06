@@ -26,7 +26,8 @@ function App() {
   })
   const lightTheme = createMuiTheme({
     palette: {
-      type: 'light'
+      type: 'light',
+      // primary: 
     }
   })
 

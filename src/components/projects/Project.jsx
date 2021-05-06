@@ -12,39 +12,12 @@ import Typography from '@material-ui/core/Typography';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import { BiWorld } from 'react-icons/bi';
 import { SiGithub } from 'react-icons/si';
-import { makeStyles } from '@material-ui/core/styles';
+import { useStyles } from './ProjectStyles';
 
-const useStyles = makeStyles((theme) => ({
-  root: {
-    // maxWidth: 545,
-    maxWidth: 745,
-    margin: 20,
-    flexBasis: '0%'
-  },
-  media: {
-    height: 0,
-    // paddingTop: '56.25%', // 16:9
-    // paddingTop: '60.25%', // 16:9
-    paddingTop: '70.25%', // 16:9
-
-
-  },
-  expand: {
-    transform: 'rotate(0deg)',
-    marginLeft: 'auto',
-    transition: theme.transitions.create('transform', {
-      duration: theme.transitions.duration.shortest,
-    }),
-  },
-  expandOpen: {
-    transform: 'rotate(180deg)',
-  },
-}));
 
 const Project = ({ title, intro, body, img, iconsTechUsed, siteLive, repoURL }) => {
   const classes = useStyles();
   const [expanded, setExpanded] = React.useState(false);
-
   const handleExpandClick = () => {
     setExpanded(!expanded);
   };
