@@ -40,7 +40,13 @@ const Navbar = ({ darkMode, setDarkMode }) => {
               </div>
             )
           }
-          < DrawerComponent openDrawer={openDrawer} setOpenDrawer={setOpenDrawer} isMatch={isMatch} />
+          < DrawerComponent
+            openDrawer={openDrawer}
+            setOpenDrawer={setOpenDrawer}
+            isMatch={isMatch}
+            darkMode={darkMode}
+            setDarkMode={setDarkMode}
+          />
         </Toolbar>
       </AppBar>
       <Toolbar />

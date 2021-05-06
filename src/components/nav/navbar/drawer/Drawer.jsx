@@ -5,8 +5,9 @@ import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import Button from '@material-ui/core/Button';
+import ThemeSwitch from '../../../theme/ThemeSwitch';
 
-const DrawerComponent = ({ openDrawer, setOpenDrawer, isMatch }) => {
+const DrawerComponent = ({ openDrawer, setOpenDrawer, isMatch, darkMode, setDarkMode }) => {
 
   return (
     <Drawer
@@ -51,6 +52,14 @@ const DrawerComponent = ({ openDrawer, setOpenDrawer, isMatch }) => {
           <Button href='#contact' onClick={() => setOpenDrawer(false)}>
             <ListItemIcon>
               <ListItemText>Contact Me</ListItemText>
+            </ListItemIcon>
+          </Button>
+        </ListItem>
+
+        <ListItem>
+          <Button onClick={() => setOpenDrawer(false)}>
+            <ListItemIcon>
+              <ThemeSwitch darkMode={darkMode} setDarkMode={setDarkMode} />
             </ListItemIcon>
           </Button>
         </ListItem>
