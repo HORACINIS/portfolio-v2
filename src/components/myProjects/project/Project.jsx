@@ -43,11 +43,12 @@ const Project = ({ title, intro, body, img, iconsTechUsed, siteLive, repoURL }) 
       {/* </CardActionArea> */}
       <CardActions disableSpacing>
         {iconsTechUsed.map((icon, index) => ( // icon of tech used
-          <IconButton key={index} aria-label='Tech used'>
+          <IconButton className={classes.techIcons} key={index} aria-label='Tech used'>
             {icon}
           </IconButton>
         ))}
         <IconButton
+        style={{color: 'red'}}
           className={clsx(classes.expand, {
             [classes.expandOpen]: expanded,
           })}
@@ -61,10 +62,10 @@ const Project = ({ title, intro, body, img, iconsTechUsed, siteLive, repoURL }) 
       <Collapse in={expanded} timeout="auto" unmountOnExit>
         <CardContent>
           <Typography paragraph>Links</Typography>
-          <IconButton aria-label='site live' target='_blank' href={siteLive}>
+          <IconButton className={classes.linksIcons} aria-label='site live' target='_blank' href={siteLive}>
             <BiWorld />
           </IconButton>
-          <IconButton aria-label='repo url' target='_blank' href={repoURL}>
+          <IconButton className={classes.linksIcons} aria-label='repo url' target='_blank' href={repoURL}>
             <SiGithub />
           </IconButton>
         </CardContent>

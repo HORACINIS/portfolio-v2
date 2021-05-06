@@ -16,8 +16,12 @@ export const useStyles = makeStyles((theme) => ({
     // paddingTop: '56.25%', // 16:9
     // paddingTop: '60.25%', // 16:9
     paddingTop: '70.25%', // 16:9
-
-
+  },
+  techIcons: {
+    color: theme.palette.type === 'light' ? '#000000' : '#f9a825'
+  },
+  linksIcons: {
+    color: theme.palette.type === 'light' && '#ff1744'
   },
   expand: {
     transform: 'rotate(0deg)',
