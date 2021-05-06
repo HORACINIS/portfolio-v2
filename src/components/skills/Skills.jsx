@@ -8,7 +8,7 @@ const Skills = () => {
   const classes = useStyles();
   return (
     <Paper square>
-      <Grid className={classes.root} id='skills' >
+      <Grid className={classes.root} id='skills' style={{ border: 'solid black 2px' }}>
         <Typography className={classes.title} variant='h3'>Skills</Typography>
       </Grid>
     </Paper>

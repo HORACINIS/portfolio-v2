@@ -5,8 +5,12 @@ export const useStyles = makeStyles((theme) => ({
     // maxWidth: 545,
     maxWidth: 745,
     margin: 20,
-    flexBasis: '0%'
+    flexBasis: '0%',
+    backgroundColor: theme.palette.type === 'light' && '#f9a825'
   },
+  // header: {
+  //   backgroundColor: theme.palette.type === 'light' && '#f9a825'
+  // },
   media: {
     height: 0,
     // paddingTop: '56.25%', // 16:9

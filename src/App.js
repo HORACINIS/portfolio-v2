@@ -32,6 +32,8 @@ function App() {
     }
   })
 
+  console.log(lightTheme)
+
   return (
     <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
       {/* <div> */}
