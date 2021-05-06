@@ -9,5 +9,8 @@ export const useStyles = makeStyles({
     textAlign: 'center',
     width: '100%',
     minHeight: '95vh',
+  },
+  title: {
+    margin: '50px 0'
   }
 });

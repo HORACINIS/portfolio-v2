@@ -2,6 +2,7 @@ import React from 'react';
 import Project from '../project/Project';
 import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
+import Typography from '@material-ui/core/Typography';
 import { projectsList } from '../data/projectsList';
 import { useStyles } from './ProjectsStyles';
 
@@ -11,7 +12,9 @@ const Projects = () => {
 
   return (
     <Paper id='projects' className={classes.root} >
-      <h1>Projects</h1>
+      {/* <h1>Projects</h1> */}
+      <Typography className={classes.title} variant='h3'>Projects</Typography>
+
       <Grid container justify='center'>
         {projectsList.map((project, index) => (
           // <Grid key={index} item lg={3} md={6} sm={11} style={{marginLeft: '1px'}}>

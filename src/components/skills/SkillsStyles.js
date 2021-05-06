@@ -11,6 +11,6 @@ export const useStyles = makeStyles({
     minHeight: '95vh',
   },
   title: {
-    fontSize: '2em',
+    margin: '50px 0'
   }
 });
