@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Navbar from './components/nav/navbar/Navbar';
 import HeroCover from './components/heroCover/HeroCover'
 import Skills from './components/skills/Skills';
-import Projects from './components/projects/Projects';
+import Projects from './components/myProjects/projects/Projects';
 import AboutMe from './components/aboutMe/AboutMe';
 import ContactMe from './components/contactMe/ContactMe';
 import BottomNavbar from './components/nav/bottomNavbar/BottomNavbar';

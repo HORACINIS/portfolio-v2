@@ -1,8 +1,8 @@
 import React from 'react';
-import Project from './Project';
+import Project from '../project/Project';
 import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
-import { projectsList } from './projectsList';
+import { projectsList } from '../data/projectsList';
 import { useStyles } from './ProjectsStyles';
 
 const Projects = () => {
