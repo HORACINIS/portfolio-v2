@@ -7,9 +7,8 @@ import { useStyles } from './ContactMeStyles';
 const ContactMe = () => {
   const classes = useStyles();
   return (
-    <Paper id='contact'>
+    <Paper id='contact' square>
       <Grid className={classes.root} container>
-        {/* <h1>Contact Me</h1> */}
         <Typography className={classes.title} variant='h3'>Contact Me</Typography>
       </Grid>
     </Paper>

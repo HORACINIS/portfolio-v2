@@ -11,7 +11,7 @@ const Projects = () => {
   console.log(projectsList)
 
   return (
-    <Paper id='projects' className={classes.root} >
+    <Paper id='projects' className={classes.root} square>
       {/* <h1>Projects</h1> */}
       <Typography className={classes.title} variant='h3'>Projects</Typography>
 

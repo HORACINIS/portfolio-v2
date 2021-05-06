@@ -7,8 +7,8 @@ import { useStyles } from './SkillsStyles';
 const Skills = () => {
   const classes = useStyles();
   return (
-    <Paper>
-      <Grid className={classes.root} id='skills' style={{ border: 'solid black 2px' }}>
+    <Paper square>
+      <Grid className={classes.root} id='skills' >
         <Typography className={classes.title} variant='h3'>Skills</Typography>
       </Grid>
     </Paper>

@@ -8,7 +8,7 @@ const AboutMe = () => {
   const classes = useStyles();
 
   return (
-    <Paper id='about' className={classes.root}>
+    <Paper id='about' className={classes.root} square>
       <div className={classes.container}>
         <Typography component='h1' className={classes.title}>About Me</Typography>
         <img src={profilePic} className={classes.profilePic} alt='profile' />

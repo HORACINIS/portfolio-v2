@@ -17,7 +17,7 @@ export const useStyles = makeStyles((theme) => ({
     justifyContent: 'center',
     textAlign: 'center',
     width: '100%',
-    minHeight: '95vh',
+    minHeight: '94vh',
   },
   avatar: {
     width: theme.spacing(20),

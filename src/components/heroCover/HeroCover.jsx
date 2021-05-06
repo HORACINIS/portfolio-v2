@@ -12,7 +12,7 @@ import { useStyles } from './HeroCoverStyles';
 const HeroCover = () => {
   const classes = useStyles();
   return (
-    <Paper className={classes.root} id='home'>
+    <Paper className={classes.root} id='home' square>
       <Grid container justify='center' direction='column'>
         <Typography
           className={classes.welcomeText}
