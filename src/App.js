@@ -6,7 +6,6 @@ import Projects from './components/projects/Projects';
 import AboutMe from './components/aboutMe/AboutMe';
 import ContactMe from './components/contactMe/ContactMe';
 import BottomNavbar from './components/nav/bottomNavbar/BottomNavbar';
-import Switch from '@material-ui/core/Switch';
 import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
 
 function App() {
@@ -30,28 +29,21 @@ function App() {
 
   return (
     <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
-      <div className='container'>
-        <header>
-          <Navbar />
-        </header>
-        <main>
-          {/* el switch hay que moverlo de aqui */}
-          <Switch
-            checked={darkMode}
-            onChange={() => setDarkMode(!darkMode)}
-            color="primary"
-            inputProps={{ 'aria-label': 'primary checkbox' }}
-          />
-          <HeroCover />
-          <Skills />
-          <Projects />
-          <AboutMe />
-          <ContactMe />
-        </main>
-        <footer>
-          <BottomNavbar />
-        </footer>
-      </div>
+      {/* <div> */}
+      <header>
+        <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
+      </header>
+      <main>
+        <HeroCover />
+        <Skills />
+        <Projects />
+        <AboutMe />
+        <ContactMe />
+      </main>
+      <footer>
+        <BottomNavbar />
+      </footer>
+      {/* </div> */}
     </ThemeProvider>
   );
 }
