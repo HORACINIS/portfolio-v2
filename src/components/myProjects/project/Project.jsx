@@ -48,7 +48,7 @@ const Project = ({ title, intro, body, img, iconsTechUsed, siteLive, repoURL }) 
           </IconButton>
         ))}
         <IconButton
-        style={{color: 'red'}}
+          style={{ color: 'red' }}
           className={clsx(classes.expand, {
             [classes.expandOpen]: expanded,
           })}
@@ -62,9 +62,13 @@ const Project = ({ title, intro, body, img, iconsTechUsed, siteLive, repoURL }) 
       <Collapse in={expanded} timeout="auto" unmountOnExit>
         <CardContent>
           <Typography paragraph>Links</Typography>
-          <IconButton className={classes.linksIcons} aria-label='site live' target='_blank' href={siteLive}>
-            <BiWorld />
-          </IconButton>
+          {/* no siteLive icon will be displayed if there isn't a site in the projectsList file */}
+          {
+            siteLive &&
+            <IconButton className={classes.linksIcons} aria-label='site live' target='_blank' href={siteLive}>
+              <BiWorld />
+            </IconButton>
+          }
           <IconButton className={classes.linksIcons} aria-label='repo url' target='_blank' href={repoURL}>
             <SiGithub />
           </IconButton>
