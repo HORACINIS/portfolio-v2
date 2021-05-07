@@ -5,8 +5,8 @@ import { ImHtmlFive } from 'react-icons/im';
 import { FaCcStripe } from 'react-icons/fa';
 
 // project images
-import el_cartel from '../images/el_cartel.png';
-import cartel_bigger from '../images/cartel_bigger.jpg';
+import el_cartel from '../images/el_cartel.jpg';
+import my_todo_list from '../images/my_todo_list.jpg';
 
 // icon variable to be used with the object below
 const html = <ImHtmlFive />;
@@ -31,13 +31,13 @@ export const projectsList = [
 
   },
   {
-    title: 'El Cartel DOS',
-    intro: 'Full stack two-sided marketplace created with Rails',
+    title: 'My To-do List',
+    intro: 'Front-end to-do list created with ReactJS',
     body: 'Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah.',
-    img: cartel_bigger,
-    iconsTechUsed: [javaScript, react],
-    siteLive: 'https://elcartel.herokuapp.com/',
-    repoURL: 'https://github.com/HORACINIS/el_carsales_marketplace'
+    img: my_todo_list,
+    iconsTechUsed: [javaScript, react, bootstrap],
+    siteLive: 'https://horacinis-todo.netlify.app/',
+    repoURL: 'https://github.com/HORACINIS/todo-list'
   },
   {
     title: 'El Cartel',
