@@ -62,7 +62,7 @@ const Project = ({ title, intro, body, img, iconsTechUsed, siteLive, repoURL }) 
       <Collapse in={expanded} timeout="auto" unmountOnExit>
         <CardContent>
           <Typography paragraph>Links</Typography>
-          {/* no siteLive icon will be displayed if there isn't a site in the projectsList file */}
+          {/* no siteLive icon will be displayed if there isn't a siteLive in the projectsList object file */}
           {
             siteLive &&
             <IconButton className={classes.linksIcons} aria-label='site live' target='_blank' href={siteLive}>
