@@ -15,7 +15,7 @@ import { SiGithub } from 'react-icons/si';
 import { useStyles } from './ProjectStyles';
 
 
-const Project = ({ title, intro, body, img, iconsTechUsed, siteLive, repoURL }) => {
+const Project = ({ title, intro, body, img, iconsTechUsed, links, links: { siteLive, repoURL } }) => {
   const classes = useStyles();
   const [expanded, setExpanded] = React.useState(false);
   const handleExpandClick = () => {
@@ -35,43 +35,47 @@ const Project = ({ title, intro, body, img, iconsTechUsed, siteLive, repoURL }) 
         image={img}  // image src 
         title={title} // image alt
       />
-      <CardContent>
+      {/* <CardContent>
         <Typography variant="body1" component="p">
           {body}
         </Typography>
-      </CardContent>
+      </CardContent> */}
       {/* </CardActionArea> */}
       <CardActions disableSpacing>
-        {iconsTechUsed.map((icon, index) => ( // icon of tech used
+        {iconsTechUsed.map((icon, index) => ( // icons of tech used
           <IconButton className={classes.techIcons} key={index} aria-label='Tech used'>
             {icon}
           </IconButton>
         ))}
-        <IconButton
-          style={{ color: 'red' }}
-          className={clsx(classes.expand, {
-            [classes.expandOpen]: expanded,
-          })}
-          onClick={handleExpandClick}
-          aria-expanded={expanded}
-          aria-label="show more"
-        >
-          <ExpandMoreIcon />
-        </IconButton>
+        {links &&
+          <IconButton
+            style={{ color: 'red' }}
+            className={clsx(classes.expand, {
+              [classes.expandOpen]: expanded,
+            })}
+            onClick={handleExpandClick}
+            aria-expanded={expanded}
+            aria-label="show more"
+          >
+            <ExpandMoreIcon />
+          </IconButton>
+        }
       </CardActions>
       <Collapse in={expanded} timeout="auto" unmountOnExit>
         <CardContent>
-          <Typography paragraph>Links</Typography>
+          <Typography paragraph>{siteLive || repoURL ? 'Links' : 'No Links'}</Typography>
           {/* no siteLive icon will be displayed if there isn't a siteLive in the projectsList object file */}
-          {
-            siteLive &&
+          {siteLive &&
             <IconButton className={classes.linksIcons} aria-label='site live' target='_blank' href={siteLive}>
               <BiWorld />
             </IconButton>
           }
-          <IconButton className={classes.linksIcons} aria-label='repo url' target='_blank' href={repoURL}>
-            <SiGithub />
-          </IconButton>
+          {/* no github icon will be displayed if there isn't a repoURL in the projectsList object file */}
+          {repoURL &&
+            <IconButton className={classes.linksIcons} aria-label='repo url' target='_blank' href={repoURL}>
+              <SiGithub />
+            </IconButton>
+          }
         </CardContent>
       </Collapse>
     </Card>
