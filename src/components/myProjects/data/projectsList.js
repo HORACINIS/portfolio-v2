@@ -1,12 +1,12 @@
 // icons of tech used
-import { SiJavascript, SiReact, SiRails, SiCss3, SiBootstrap, SiAmazonaws } from 'react-icons/si';
+import { SiJavascript, SiReact, SiRails, SiCss3, SiBootstrap, SiAmazonaws, SiPostgresql } from 'react-icons/si';
 import { DiRuby } from 'react-icons/di';
 import { ImHtmlFive } from 'react-icons/im';
 import { FaCcStripe } from 'react-icons/fa';
 import { BsTerminalFill } from 'react-icons/bs';
 import { IoIosConstruct } from 'react-icons/io';
 
-// project images - ideal size is --->  739 x 518 <---
+// project images - ideal size is --->  739w x 518h <---
 import el_cartel from '../images/el_cartel.jpg';
 import my_todo_list from '../images/my_todo_list.jpg';
 import lyrics_x from '../images/lyrics_x.jpg';
@@ -24,7 +24,8 @@ const rails = <SiRails />;
 const terminal = <BsTerminalFill />;
 const bootstrap = <SiBootstrap />;
 const aws = <SiAmazonaws />;
-const stripe = <FaCcStripe />
+const stripe = <FaCcStripe />;
+const postgresql = <SiPostgresql />;
 const underConstruction = <IoIosConstruct />;
 
 export const projectsList = [
@@ -33,13 +34,11 @@ export const projectsList = [
     intro: 'Full stack two-sided marketplace created with Rails',
     // body: 'Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah.',
     img: el_cartel,
-    iconsTechUsed: [html, ruby, rails, bootstrap, aws, stripe],
+    iconsTechUsed: [ruby, rails, bootstrap, aws, stripe, postgresql],
     links: {
       siteLive: 'https://elcartel.herokuapp.com/',
       repoURL: 'https://github.com/HORACINIS/el_carsales_marketplace'
     }
-
-
   },
   {
     title: 'My To-do List',
