@@ -7,6 +7,7 @@ import { FaCcStripe } from 'react-icons/fa';
 // project images
 import el_cartel from '../images/el_cartel.jpg';
 import my_todo_list from '../images/my_todo_list.jpg';
+import lyrics_x from '../images/lyrics_x.jpg';
 
 // icon variable to be used with the object below
 const html = <ImHtmlFive />;
@@ -21,7 +22,7 @@ const stripe = <FaCcStripe />
 
 export const projectsList = [
   {
-    title: 'El Cartel',
+    title: 'El CARtel',
     intro: 'Full stack two-sided marketplace created with Rails',
     body: 'Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah.',
     img: el_cartel,
@@ -40,20 +41,20 @@ export const projectsList = [
     repoURL: 'https://github.com/HORACINIS/todo-list'
   },
   {
-    title: 'El Cartel',
-    intro: 'Full stack two-sided marketplace created with Rails',
+    title: 'Lyrics X',
+    intro: 'Front-end lyrics finder created with ReactJS',
     body: 'Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah.',
-    img: el_cartel,
-    iconsTechUsed: [css, javaScript, react],
-    siteLive: 'https://elcartel.herokuapp.com/',
-    repoURL: 'https://github.com/HORACINIS/el_carsales_marketplace'
+    img: lyrics_x,
+    iconsTechUsed: [javaScript, react, bootstrap],
+    siteLive: 'https://lyrics-finder-horacinis.netlify.app/',
+    repoURL: 'https://github.com/HORACINIS/lyrics-finder'
   },
   {
     title: 'El Cartel DOS',
     intro: 'Full stack two-sided marketplace created with Rails',
     body: 'Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah.',
     img: el_cartel,
-    iconsTechUsed: [javaScript, react, ruby],
+    iconsTechUsed: [html, css, javaScript,],
     siteLive: 'https://elcartel.herokuapp.com/',
     repoURL: 'https://github.com/HORACINIS/el_carsales_marketplace'
   },
