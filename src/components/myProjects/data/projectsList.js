@@ -6,7 +6,7 @@ import { FaCcStripe } from 'react-icons/fa';
 import { BsTerminalFill } from 'react-icons/bs';
 import { IoIosConstruct } from 'react-icons/io';
 
-// project images
+// project images - ideal size is --->  739 x 518 <---
 import el_cartel from '../images/el_cartel.jpg';
 import my_todo_list from '../images/my_todo_list.jpg';
 import lyrics_x from '../images/lyrics_x.jpg';
