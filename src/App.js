@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Navbar from './components/nav/navbar/Navbar';
 import HeroCover from './components/heroCover/HeroCover'
 import Skills from './components/skills/Skills';
@@ -30,15 +30,35 @@ function App() {
         constrastText: '#000000'
       }
     }
-  })
+  });
 
-  console.log(lightTheme)
+  const handleThemeSwitch = () => {
+    setDarkMode(!darkMode)
+    localStorage.setItem('darkMode', JSON.stringify(darkMode))
+  }
+
+  // const getLocalStorageStoredTheme = () => {
+  //   return localStorage.getItem('darkMode');
+  // }
+
+  // useEffect(() => {
+  //   getLocalStorageStoredTheme()
+  //   if (getLocalStorageStoredTheme() !== null) {
+  //     setDarkMode(Boolean(getLocalStorageStoredTheme()))
+  //   } else {
+  //     localStorage.setItem('darkMode', darkMode.toString());
+  //   }
+  // }, []);
+
+
+
+
 
   return (
     <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
       {/* <div> */}
       <header>
-        <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
+        <Navbar onThemeSwitch={handleThemeSwitch} darkMode={darkMode} setDarkMode={setDarkMode} />
       </header>
       <main>
         <HeroCover />

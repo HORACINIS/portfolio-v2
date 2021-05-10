@@ -11,7 +11,7 @@ import { useTheme } from '@material-ui/core/styles';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
 import { useStyles } from './NavbarStyles';
 
-const Navbar = ({ darkMode, setDarkMode }) => {
+const Navbar = ({ darkMode, setDarkMode, onThemeSwitch }) => {
 
   const classes = useStyles();
   //Breakpoints
@@ -36,7 +36,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
                 <Button href='#skills' className={classes.menuButton} color="inherit">Skills</Button>
                 <Button href='#about' className={classes.menuButton} color="inherit">About</Button>
                 <Button href='#contact' className={classes.menuButton} color="inherit">Contact</Button>
-                <ThemeSwitch darkMode={darkMode} setDarkMode={setDarkMode} />
+                <ThemeSwitch darkMode={darkMode} setDarkMode={setDarkMode} onThemeSwitch={onThemeSwitch} />
               </div>
             )
           }

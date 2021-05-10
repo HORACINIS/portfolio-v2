@@ -8,7 +8,6 @@ import { useStyles } from './ProjectsStyles';
 
 const Projects = () => {
   const classes = useStyles();
-  console.log(projectsList)
 
   return (
     <Paper id='projects' className={classes.root} square>

@@ -1,11 +1,11 @@
-import React from 'react'
-import Switch from '@material-ui/core/Switch';;
+import React from 'react';
+import Switch from '@material-ui/core/Switch';
 
-const ThemeSwitch = ({ darkMode, setDarkMode }) => {
+const ThemeSwitch = ({ darkMode, onThemeSwitch }) => {
   return (
     <Switch
       checked={darkMode}
-      onChange={() => setDarkMode(!darkMode)}
+      onChange={onThemeSwitch}
       color='secondary'
       inputProps={{ 'aria-label': 'primary checkbox' }}
     />
