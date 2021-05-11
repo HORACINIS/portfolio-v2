@@ -4,7 +4,7 @@ import HeroCover from './components/heroCover/HeroCover'
 import Skills from './components/skills/Skills';
 import Projects from './components/myProjects/projects/Projects';
 import AboutMe from './components/aboutMe/AboutMe';
-import ContactMe from './components/contactMe/ContactMe';
+// import ContactMe from './components/contactMe/ContactMe';
 import BottomNavbar from './components/nav/bottomNavbar/BottomNavbar';
 import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
 
@@ -58,7 +58,7 @@ function App() {
         <Skills />
         <Projects />
         <AboutMe />
-        <ContactMe />
+        {/* <ContactMe /> */}
       </main>
       <footer>
         <BottomNavbar />
