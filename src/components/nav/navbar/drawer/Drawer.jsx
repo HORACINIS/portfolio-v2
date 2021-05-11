@@ -57,7 +57,12 @@ const DrawerComponent = ({ openDrawer, setOpenDrawer, isMatch, darkMode, setDark
         </ListItem>
 
         <ListItem>
-          <Button onClick={() => setOpenDrawer(false)}>
+          <Button onClick={() => {
+            setTimeout(() => {
+              setOpenDrawer(false);
+            }, 1000);
+          }
+          }>
             <ListItemIcon>
               <ThemeSwitch darkMode={darkMode} setDarkMode={setDarkMode} />
             </ListItemIcon>
