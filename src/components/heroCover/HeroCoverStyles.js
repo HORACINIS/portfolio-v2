@@ -37,7 +37,7 @@ export const useStyles = makeStyles((theme) => ({
     // color: 'white'
   },
   heroCoverIconsContainer: {
-    color: 'rgb(219,18,18)',
+    color: theme.palette.type === 'light' ? 'rgb(219,18,18)' : '#ffb300',
     // marginTop: 130,
   },
   heroCoverIcons: {
