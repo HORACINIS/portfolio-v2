@@ -33,24 +33,23 @@ function App() {
   });
 
   const handleThemeSwitch = () => {
-    setDarkMode(!darkMode)
-    localStorage.setItem('darkMode', JSON.stringify(darkMode))
+    setDarkMode(!darkMode);
   }
 
-  // const getLocalStorageStoredTheme = () => {
-  //   return localStorage.getItem('darkMode');
-  // }
+  const getThemeFromStorage = () => {
+    const reference = localStorage.getItem('darkMode');
+    const referenceToBoolean = JSON.parse(reference);
+    if (reference !== 'null') {
+      setDarkMode(referenceToBoolean);
+    }
+  }
+  useEffect(() => {
+    getThemeFromStorage();
+  }, []);
 
-  // useEffect(() => {
-  //   getLocalStorageStoredTheme()
-  //   if (getLocalStorageStoredTheme() !== null) {
-  //     setDarkMode(Boolean(getLocalStorageStoredTheme()))
-  //   } else {
-  //     localStorage.setItem('darkMode', darkMode.toString());
-  //   }
-  // }, []);
-
-
+  useEffect(() => {
+    localStorage.setItem('darkMode', (darkMode))
+  }, [darkMode])
 
 
 
