@@ -29,7 +29,7 @@ const HeroCover = () => {
           I'm Horacio Moran, junior Software Developer.
         </Typography>
         <Avatar alt="Horacio" src={avatar} className={classes.avatar} />
-        <Grid justify='center' item container className={classes.heroCoverIconsContainer} spacing={9}>
+        <Grid justify='center' item container className={classes.heroCoverIconsContainer} >
           <Grid item>
             <GitHubIcon className={classes.heroCoverIcons} />
           </Grid>
