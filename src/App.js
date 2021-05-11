@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Navbar from './components/nav/navbar/Navbar';
 import HeroCover from './components/heroCover/HeroCover'
 import Skills from './components/skills/Skills';
@@ -19,7 +19,7 @@ function App() {
       //   main: '#008000' 
       // }
     }
-  })
+  });
   const lightTheme = createMuiTheme({
     palette: {
       type: 'light',
@@ -30,9 +30,22 @@ function App() {
         constrastText: '#000000'
       }
     }
-  })
+  });
 
-  console.log(lightTheme)
+  const getThemeFromStorage = () => {
+    const reference = localStorage.getItem('darkMode');
+    const referenceToJsObject = JSON.parse(reference);
+    if (reference !== null) {
+      setDarkMode(referenceToJsObject);
+    }
+  };
+  useEffect(() => {
+    getThemeFromStorage();
+  }, []);
+
+  useEffect(() => {
+    localStorage.setItem('darkMode', (darkMode));
+  }, [darkMode]);
 
   return (
     <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>

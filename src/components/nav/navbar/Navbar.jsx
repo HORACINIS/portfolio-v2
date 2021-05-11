@@ -16,7 +16,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
   const classes = useStyles();
   //Breakpoints
   const theme = useTheme();
-  const isMatch = useMediaQuery(theme.breakpoints.down('xs'))
+  const isMatch = useMediaQuery(theme.breakpoints.down('xs'));
 
   const [openDrawer, setOpenDrawer] = useState(false);
 
@@ -52,6 +52,6 @@ const Navbar = ({ darkMode, setDarkMode }) => {
       <Toolbar />
     </React.Fragment>
   );
-}
+};
 
 export default Navbar;
