@@ -8,9 +8,12 @@ export const useStyles = makeStyles({
     justifyContent: 'center',
     textAlign: 'center',
     width: '100%',
-    minHeight: '95vh',
+    minHeight: '50vh',
   },
-  title: {
+  mainTitle: {
     margin: '50px 0'
+  },
+  proficientTitle: {
+    marginBottom: '100px'
   }
 });
