@@ -19,7 +19,7 @@ function App() {
       //   main: '#008000' 
       // }
     }
-  })
+  });
   const lightTheme = createMuiTheme({
     palette: {
       type: 'light',
@@ -32,32 +32,26 @@ function App() {
     }
   });
 
-  const handleThemeSwitch = () => {
-    setDarkMode(!darkMode);
-  }
-
   const getThemeFromStorage = () => {
     const reference = localStorage.getItem('darkMode');
-    const referenceToBoolean = JSON.parse(reference);
-    if (reference !== 'null') {
-      setDarkMode(referenceToBoolean);
+    const referenceToJsObject = JSON.parse(reference);
+    if (reference !== null) {
+      setDarkMode(referenceToJsObject);
     }
-  }
+  };
   useEffect(() => {
     getThemeFromStorage();
   }, []);
 
   useEffect(() => {
-    localStorage.setItem('darkMode', (darkMode))
-  }, [darkMode])
-
-
+    localStorage.setItem('darkMode', (darkMode));
+  }, [darkMode]);
 
   return (
     <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
       {/* <div> */}
       <header>
-        <Navbar onThemeSwitch={handleThemeSwitch} darkMode={darkMode} setDarkMode={setDarkMode} />
+        <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
       </header>
       <main>
         <HeroCover />

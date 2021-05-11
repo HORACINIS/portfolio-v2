@@ -11,12 +11,12 @@ import { useTheme } from '@material-ui/core/styles';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
 import { useStyles } from './NavbarStyles';
 
-const Navbar = ({ darkMode, setDarkMode, onThemeSwitch }) => {
+const Navbar = ({ darkMode, setDarkMode }) => {
 
   const classes = useStyles();
   //Breakpoints
   const theme = useTheme();
-  const isMatch = useMediaQuery(theme.breakpoints.down('xs'))
+  const isMatch = useMediaQuery(theme.breakpoints.down('xs'));
 
   const [openDrawer, setOpenDrawer] = useState(false);
 
@@ -36,7 +36,7 @@ const Navbar = ({ darkMode, setDarkMode, onThemeSwitch }) => {
                 <Button href='#skills' className={classes.menuButton} color="inherit">Skills</Button>
                 <Button href='#about' className={classes.menuButton} color="inherit">About</Button>
                 <Button href='#contact' className={classes.menuButton} color="inherit">Contact</Button>
-                <ThemeSwitch darkMode={darkMode} setDarkMode={setDarkMode} onThemeSwitch={onThemeSwitch} />
+                <ThemeSwitch darkMode={darkMode} setDarkMode={setDarkMode} />
               </div>
             )
           }
@@ -52,6 +52,6 @@ const Navbar = ({ darkMode, setDarkMode, onThemeSwitch }) => {
       <Toolbar />
     </React.Fragment>
   );
-}
+};
 
 export default Navbar;
