@@ -25,7 +25,7 @@ export const useStyles = makeStyles((theme) => ({
     marginLeft: 'auto',
     marginRight: 'auto',
     marginTop: 130,
-    marginBottom: 80,
+    marginBottom: 70,
     verticalAlign: 'middle',
     filter: 'grayScale(90%)'
   },
@@ -36,13 +36,13 @@ export const useStyles = makeStyles((theme) => ({
   introText: {
     // color: 'white'
   },
-  heroCoverIconsContainer: {
-    color: theme.palette.type === 'light' ? 'rgb(219,18,18)' : '#ffb300',
-    // marginTop: 130,
-  },
+  // heroCoverIconsContainer: {
+  //   color: theme.palette.type === 'light' ? 'rgb(219,18,18)' : '#ffb300',
+  //   // marginTop: 130,
+  // },
   heroCoverIcons: {
     fontSize: 40,
-    margin: '0px 10px'
+    color: theme.palette.type === 'light' ? 'rgb(219,18,18)' : '#ffb300',
   }
 }))
 
