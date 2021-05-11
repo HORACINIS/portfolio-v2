@@ -41,7 +41,8 @@ export const useStyles = makeStyles((theme) => ({
     // marginTop: 130,
   },
   heroCoverIcons: {
-    fontSize: 40
+    fontSize: 40,
+    margin: '0px 10px'
   }
 }))
 
