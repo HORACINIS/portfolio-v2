@@ -1,15 +1,10 @@
 import { makeStyles } from '@material-ui/core/styles';
 
-// const lightThemeImg = 'url(https://images.unsplash.com/reserve/aOcWqRTfQ12uwr3wWevA_14401305508_804b300054_o.jpg?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2555&q=80)';
-// const lightThemeImg = 'url(https://images.unsplash.com/photo-1540577482853-167cc8e169e9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2534&q=80)';
-const lightThemeImg = ''
-
-
-const darkThemeImg = '';
+const darkThemeImg = 'url(https://images.unsplash.com/photo-1508522802063-da3458d34254?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2468&q=80)'
 
 export const useStyles = makeStyles((theme) => ({
   root: {
-    backgroundImage: theme.palette.type === 'dark' ? darkThemeImg : lightThemeImg,
+    backgroundImage: theme.palette.type === 'dark' && darkThemeImg,
     backgroundPosition: 'center',
     backgroundRepeat: 'no-repeat',
     backgroundSize: 'cover',
@@ -20,15 +15,6 @@ export const useStyles = makeStyles((theme) => ({
     textAlign: 'center',
     width: '100%',
     minHeight: '50vh',
-  },
-  container: {
-    // display: 'flex',
-    // flexDirection: 'column',
-    // alignItems: 'center',
-    // justifyContent: 'center',
-    // textAlign: 'center',
-    // width: '100%',
-    // minHeight: '50vh',
   },
   mainTitle: {
     margin: '50px 0'
@@ -42,6 +28,6 @@ export const useStyles = makeStyles((theme) => ({
   },
   avatar: {
     color: '#ffb300',
-    background: theme.palette.type === 'dark' ? '' : 'black'
+    background: '#000000'
   }
 }));
