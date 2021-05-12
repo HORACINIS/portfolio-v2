@@ -64,13 +64,13 @@ const Skills = () => {
   const classes = useStyles();
 
   return (
-    <Paper square className={classes.root}>
-      <Container id='skills'>
+    <Paper className={classes.root} id='skills' square>
+      <Container>
         <Typography className={classes.mainTitle} variant='h3'>Skills</Typography>
         <Typography className={classes.proficientTitle} variant='h6'>Proficient in:</Typography>
         <Grid container justify='center' alignItems='center'>
           {skillsList.map((item) => (
-            <List key={item.name} >
+            <List key={item.name}>
               <ListItem className={classes.listItems}>
                 <ListItemAvatar>
                   <Avatar className={classes.avatar}>
