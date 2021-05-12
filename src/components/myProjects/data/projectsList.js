@@ -34,7 +34,7 @@ const underConstruction = <IoIosConstruct />;
 export const projectsList = [
   {
     title: 'El CARtel',
-    intro: 'Full stack two-sided marketplace created with Rails',
+    intro: 'Two-sided marketplace created with Rails',
     // body: 'Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah.',
     img: el_cartel,
     iconsTechUsed: [ruby, rails, bootstrap, aws, stripe, postgresql],
@@ -67,7 +67,7 @@ export const projectsList = [
   },
   {
     title: 'Honey Homage',
-    intro: 'Full-stack marketplace, created with the MERN stack',
+    intro: 'Marketplace, created with MERN stack',
     img: honey_homage,
     iconsTechUsed: [html, css, javaScript, react, node, mongo],
     links: {
