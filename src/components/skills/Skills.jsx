@@ -68,12 +68,12 @@ const Skills = () => {
       <Container id='skills' className={classes.root}>
         <Typography className={classes.mainTitle} variant='h3'>Skills</Typography>
         <Typography className={classes.proficientTitle} variant='h6'>Proficient in:</Typography>
-        <Grid container justify='flex-start' alignItems='center'>
+        <Grid container justify='center' alignItems='center'>
           {skillsList.map((item) => (
-            <List key={item.name}>
-              <ListItem>
+            <List key={item.name} >
+              <ListItem className={classes.listItems}>
                 <ListItemAvatar>
-                  <Avatar>
+                  <Avatar className={classes.avatar}>
                     {item.icon}
                   </Avatar>
                 </ListItemAvatar>
