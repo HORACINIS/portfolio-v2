@@ -64,8 +64,8 @@ const Skills = () => {
   const classes = useStyles();
 
   return (
-    <Paper square style={{ border: 'solid black 2px' }}>
-      <Container id='skills' className={classes.root}>
+    <Paper square className={classes.root}>
+      <Container id='skills'>
         <Typography className={classes.mainTitle} variant='h3'>Skills</Typography>
         <Typography className={classes.proficientTitle} variant='h6'>Proficient in:</Typography>
         <Grid container justify='center' alignItems='center'>

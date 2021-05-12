@@ -10,14 +10,6 @@ const darkThemeImg = 'url(https://images.unsplash.com/photo-1449156733864-dd5471
 
 
 export const useStyles = makeStyles((theme) => ({
-  // root: {
-  //   height: '80vh',
-  //   display: 'flex',
-  //   justifyContent: 'center',
-  //   alignItems: 'center',
-  //   marginBottom: '15vh',
-  //   margin: theme.spacing(1),
-  // },
   root: {
     backgroundImage: theme.palette.type === 'dark' ? darkThemeImg : lightThemeImg,
     backgroundPosition: 'center',
