@@ -1,4 +1,13 @@
-import { makeStyles } from '@material-ui/core/styles'
+import { makeStyles } from '@material-ui/core/styles';
+
+const lightThemeImg = 'url(https://images.unsplash.com/photo-1519120944692-1a8d8cfc107f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2552&q=80)';
+// const lightImg =  'linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.75)), '
+
+// const darkThemeImg = 'url(https://images.unsplash.com/photo-1460355976672-71c3f0a4bdac?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2550&q=80)';
+// const darkThemeImg = 'url(https://images.unsplash.com/photo-1464667831196-208f4be2592e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2550&q=80)';
+const darkThemeImg = 'url(https://images.unsplash.com/photo-1449156733864-dd5471bb7427?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2550&q=80)';
+
+
 
 export const useStyles = makeStyles((theme) => ({
   // root: {
@@ -10,6 +19,10 @@ export const useStyles = makeStyles((theme) => ({
   //   margin: theme.spacing(1),
   // },
   root: {
+    backgroundImage: theme.palette.type === 'dark' ? darkThemeImg : lightThemeImg,
+    backgroundPosition: 'center',
+    backgroundRepeat: 'no-repeat',
+    backgroundSize: 'cover',
     // marginTop: '-50px',
     display: 'flex',
     flexDirection: 'column',
