@@ -17,6 +17,7 @@ export const useStyles = makeStyles((theme) => ({
     backgroundPosition: 'center',
     backgroundRepeat: 'no-repeat',
     backgroundSize: 'cover',
+    backgroundAttachment: 'fixed',
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
