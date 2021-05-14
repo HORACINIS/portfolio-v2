@@ -34,18 +34,18 @@ const Navbar = ({ darkMode, setDarkMode }) => {
             </Button>
             : (
               <div>
-                <Link to='home' spy smooth offset={-80} duration={1000}>
-                  <Button>
+                <Link to='home' activeClass={classes.active} spy smooth offset={-80} duration={1000}>
+                  <Button className={classes.nameColour}>
                     <IoHome />
                   </Button>
                 </Link>
-                <Link to='skills' spy smooth={true} offset={-60} duration={1000}>
+                <Link to='skills' activeClass={classes.active} spy smooth={true} offset={-60} duration={1000}>
                   <Button className={classes.menuButton} color="inherit">Skills</Button>
                 </Link>
-                <Link to='projects' spy smooth={true} offset={-65} duration={1000}>
+                <Link to='projects' activeClass={classes.active} spy smooth={true} offset={-60} duration={1000}>
                   <Button className={classes.menuButton} color="inherit">Projects</Button>
                 </Link>
-                <Link to='about' spy smooth={true} duration={1000}>
+                <Link to='about' activeClass={classes.active} spy smooth={true} duration={1000}>
                   <Button className={classes.menuButton} color="inherit">About</Button>
                 </Link>
                 {/* <Link to='contact' spy smooth={true} duration={1000}>
