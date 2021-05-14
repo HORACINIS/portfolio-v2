@@ -5,6 +5,7 @@ import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import Button from '@material-ui/core/Button';
+import { Link } from 'react-scroll';
 import ThemeSwitch from '../../../theme/ThemeSwitch';
 
 const DrawerComponent = ({ openDrawer, setOpenDrawer, isMatch, darkMode, setDarkMode }) => {
@@ -17,44 +18,54 @@ const DrawerComponent = ({ openDrawer, setOpenDrawer, isMatch, darkMode, setDark
     >
       <List>
         <ListItem button divider>
-          <Button href='#home' onClick={() => setOpenDrawer(false)}>
-            <ListItemIcon>
-              <ListItemText>Home</ListItemText>
-            </ListItemIcon>
-          </Button>
+          <Link to='home' smooth offset={-80} duration={1000}>
+            <Button onClick={() => setOpenDrawer(false)}>
+              <ListItemIcon>
+                <ListItemText>Home</ListItemText>
+              </ListItemIcon>
+            </Button>
+          </Link>
         </ListItem>
 
         <ListItem button divider>
-          <Button href='#skills' onClick={() => setOpenDrawer(false)}>
-            <ListItemIcon>
-              <ListItemText>Skills</ListItemText>
-            </ListItemIcon>
-          </Button>
+          <Link to='skills' smooth offset={-60} duration={1000}>
+            <Button onClick={() => setOpenDrawer(false)}>
+              <ListItemIcon>
+                <ListItemText>Skills</ListItemText>
+              </ListItemIcon>
+            </Button>
+          </Link>
         </ListItem>
 
         <ListItem button divider>
-          <Button href='#projects' onClick={() => setOpenDrawer(false)}>
-            <ListItemIcon>
-              <ListItemText>Projects</ListItemText>
-            </ListItemIcon>
-          </Button>
+          <Link to='projects' smooth offset={-60} duration={1000}>
+            <Button onClick={() => setOpenDrawer(false)}>
+              <ListItemIcon>
+                <ListItemText>Projects</ListItemText>
+              </ListItemIcon>
+            </Button>
+          </Link>
         </ListItem>
 
         <ListItem button divider>
-          <Button href='#about' onClick={() => setOpenDrawer(false)}>
-            <ListItemIcon>
-              <ListItemText>About Me</ListItemText>
-            </ListItemIcon>
-          </Button>
+          <Link to='about' smooth duration={1000}>
+            <Button onClick={() => setOpenDrawer(false)}>
+              <ListItemIcon>
+                <ListItemText>About Me</ListItemText>
+              </ListItemIcon>
+            </Button>
+          </Link>
         </ListItem>
 
-        <ListItem button divider>
-          <Button href='#contact' onClick={() => setOpenDrawer(false)}>
+        {/* <ListItem button divider>
+          <Link to='contact' smooth duration={1000}>
+          <Button onClick={() => setOpenDrawer(false)}>
             <ListItemIcon>
               <ListItemText>Contact Me</ListItemText>
             </ListItemIcon>
           </Button>
-        </ListItem>
+          </Link>
+        </ListItem> */}
 
         <ListItem onClick={() => {
           setTimeout(() => {

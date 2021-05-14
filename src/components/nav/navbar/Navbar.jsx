@@ -7,8 +7,10 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 import Button from '@material-ui/core/Button';
 import MenuIcon from '@material-ui/icons/Menu';
 import DrawerComponent from './drawer/Drawer';
+import { IoHome } from 'react-icons/io5';
 import { useTheme } from '@material-ui/core/styles';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
+import { Link } from 'react-scroll';
 import { useStyles } from './NavbarStyles';
 
 const Navbar = ({ darkMode, setDarkMode }) => {
@@ -32,10 +34,23 @@ const Navbar = ({ darkMode, setDarkMode }) => {
             </Button>
             : (
               <div>
-                <Button href='#projects' className={classes.menuButton} color="inherit">Projects</Button>
-                <Button href='#skills' className={classes.menuButton} color="inherit">Skills</Button>
-                <Button href='#about' className={classes.menuButton} color="inherit">About</Button>
-                <Button href='#contact' className={classes.menuButton} color="inherit">Contact</Button>
+                <Link to='home' activeClass={classes.active} spy smooth offset={-80} duration={1000}>
+                  <Button className={classes.nameColour}>
+                    <IoHome />
+                  </Button>
+                </Link>
+                <Link to='skills' activeClass={classes.active} spy smooth={true} offset={-60} duration={1000}>
+                  <Button className={classes.menuButton} color="inherit">Skills</Button>
+                </Link>
+                <Link to='projects' activeClass={classes.active} spy smooth={true} offset={-60} duration={1000}>
+                  <Button className={classes.menuButton} color="inherit">Projects</Button>
+                </Link>
+                <Link to='about' activeClass={classes.active} spy smooth={true} duration={1000}>
+                  <Button className={classes.menuButton} color="inherit">About</Button>
+                </Link>
+                {/* <Link to='contact' spy smooth={true} duration={1000}>
+                  <Button className={classes.menuButton} color="inherit">Contact</Button>
+                </Link> */}
                 <ThemeSwitch darkMode={darkMode} setDarkMode={setDarkMode} />
               </div>
             )

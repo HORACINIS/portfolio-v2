@@ -49,7 +49,6 @@ function App() {
 
   return (
     <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
-      {/* <div> */}
       <header>
         <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
       </header>
@@ -63,7 +62,6 @@ function App() {
       <footer>
         <BottomNavbar />
       </footer>
-      {/* </div> */}
     </ThemeProvider>
   );
 }
