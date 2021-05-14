@@ -7,8 +7,11 @@ import ListItemIcon from '@material-ui/core/ListItemIcon';
 import Button from '@material-ui/core/Button';
 import { Link } from 'react-scroll';
 import ThemeSwitch from '../../../theme/ThemeSwitch';
+import { useStyles } from './DrawerStyles';
 
 const DrawerComponent = ({ openDrawer, setOpenDrawer, isMatch, darkMode, setDarkMode }) => {
+
+  const classes = useStyles();
 
   return (
     <Drawer
@@ -18,7 +21,7 @@ const DrawerComponent = ({ openDrawer, setOpenDrawer, isMatch, darkMode, setDark
     >
       <List>
         <ListItem button divider>
-          <Link to='home' smooth offset={-80} duration={1000}>
+          <Link to='home' activeClass={classes.active} spy smooth offset={-80} duration={1000}>
             <Button onClick={() => setOpenDrawer(false)}>
               <ListItemIcon>
                 <ListItemText>Home</ListItemText>
@@ -28,7 +31,7 @@ const DrawerComponent = ({ openDrawer, setOpenDrawer, isMatch, darkMode, setDark
         </ListItem>
 
         <ListItem button divider>
-          <Link to='skills' smooth offset={-60} duration={1000}>
+          <Link to='skills' activeClass={classes.active} spy smooth offset={-60} duration={1000}>
             <Button onClick={() => setOpenDrawer(false)}>
               <ListItemIcon>
                 <ListItemText>Skills</ListItemText>
@@ -38,7 +41,7 @@ const DrawerComponent = ({ openDrawer, setOpenDrawer, isMatch, darkMode, setDark
         </ListItem>
 
         <ListItem button divider>
-          <Link to='projects' smooth offset={-60} duration={1000}>
+          <Link to='projects' activeClass={classes.active} spy smooth offset={-60} duration={1000}>
             <Button onClick={() => setOpenDrawer(false)}>
               <ListItemIcon>
                 <ListItemText>Projects</ListItemText>
@@ -48,7 +51,7 @@ const DrawerComponent = ({ openDrawer, setOpenDrawer, isMatch, darkMode, setDark
         </ListItem>
 
         <ListItem button divider>
-          <Link to='about' smooth duration={1000}>
+          <Link to='about' activeClass={classes.active} spy smooth duration={1000}>
             <Button onClick={() => setOpenDrawer(false)}>
               <ListItemIcon>
                 <ListItemText>About Me</ListItemText>

@@ -18,8 +18,7 @@ export const useStyles = makeStyles((theme) => ({
     color: theme.palette.type === 'light' ? '#ffffff' : '#000000'
   },
   active: {
-    // backgroundColor: theme.palette.type === 'light' ? '#c9b540' : 'red',
     padding: 10,
-    borderBottom: 'red solid 3px'
+    borderBottom: theme.palette.type === 'light' ? 'red solid 3px' : '#212121 solid 3px'
   }
 }));
