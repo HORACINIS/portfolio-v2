@@ -18,7 +18,7 @@ const DrawerComponent = ({ openDrawer, setOpenDrawer, isMatch, darkMode, setDark
     >
       <List>
         <ListItem button divider>
-          <Link to='home' smooth duration={1000}>
+          <Link to='home' smooth offset={-80} duration={1000}>
             <Button onClick={() => setOpenDrawer(false)}>
               <ListItemIcon>
                 <ListItemText>Home</ListItemText>
@@ -28,7 +28,7 @@ const DrawerComponent = ({ openDrawer, setOpenDrawer, isMatch, darkMode, setDark
         </ListItem>
 
         <ListItem button divider>
-          <Link to='skills' smooth duration={1000}>
+          <Link to='skills' smooth offset={-60} duration={1000}>
             <Button onClick={() => setOpenDrawer(false)}>
               <ListItemIcon>
                 <ListItemText>Skills</ListItemText>
@@ -38,22 +38,22 @@ const DrawerComponent = ({ openDrawer, setOpenDrawer, isMatch, darkMode, setDark
         </ListItem>
 
         <ListItem button divider>
-          <Link to='projects' smooth duration={1000}>
-          <Button onClick={() => setOpenDrawer(false)}>
-            <ListItemIcon>
-              <ListItemText>Projects</ListItemText>
-            </ListItemIcon>
-          </Button>
+          <Link to='projects' smooth offset={-60} duration={1000}>
+            <Button onClick={() => setOpenDrawer(false)}>
+              <ListItemIcon>
+                <ListItemText>Projects</ListItemText>
+              </ListItemIcon>
+            </Button>
           </Link>
         </ListItem>
 
         <ListItem button divider>
           <Link to='about' smooth duration={1000}>
-          <Button onClick={() => setOpenDrawer(false)}>
-            <ListItemIcon>
-              <ListItemText>About Me</ListItemText>
-            </ListItemIcon>
-          </Button>
+            <Button onClick={() => setOpenDrawer(false)}>
+              <ListItemIcon>
+                <ListItemText>About Me</ListItemText>
+              </ListItemIcon>
+            </Button>
           </Link>
         </ListItem>
 

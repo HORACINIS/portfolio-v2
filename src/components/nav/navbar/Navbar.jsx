@@ -7,6 +7,7 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 import Button from '@material-ui/core/Button';
 import MenuIcon from '@material-ui/icons/Menu';
 import DrawerComponent from './drawer/Drawer';
+import { IoHome } from 'react-icons/io5';
 import { useTheme } from '@material-ui/core/styles';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
 import { Link } from 'react-scroll';
@@ -33,16 +34,21 @@ const Navbar = ({ darkMode, setDarkMode }) => {
             </Button>
             : (
               <div>
-                <Link to='projects' smooth={true} duration={1000}>
-                  <Button className={classes.menuButton} color="inherit">Projects</Button>
+                <Link to='home' spy smooth offset={-80} duration={1000}>
+                  <Button>
+                    <IoHome />
+                  </Button>
                 </Link>
-                <Link to='skills' smooth={true} duration={1000}>
+                <Link to='skills' spy smooth={true} offset={-60} duration={1000}>
                   <Button className={classes.menuButton} color="inherit">Skills</Button>
                 </Link>
-                <Link to='about' smooth={true} duration={1000}>
+                <Link to='projects' spy smooth={true} offset={-65} duration={1000}>
+                  <Button className={classes.menuButton} color="inherit">Projects</Button>
+                </Link>
+                <Link to='about' spy smooth={true} duration={1000}>
                   <Button className={classes.menuButton} color="inherit">About</Button>
                 </Link>
-                {/* <Link to='contact' smooth={true} duration={1000}>
+                {/* <Link to='contact' spy smooth={true} duration={1000}>
                   <Button className={classes.menuButton} color="inherit">Contact</Button>
                 </Link> */}
                 <ThemeSwitch darkMode={darkMode} setDarkMode={setDarkMode} />
