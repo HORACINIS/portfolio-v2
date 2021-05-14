@@ -27,7 +27,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
       <CssBaseline />
       <AppBar className={classes.root}>
         <Toolbar>
-          <Typography className={classes.namePosition} variant="h6"><Button className={classes.nameColour} href='#home'>Horacio M.</Button></Typography>
+          <Typography className={classes.namePosition} variant="h6"><Link to='home' smooth offset={-60} duration={1000}><Button className={classes.nameColour}>Horacio M.</Button></Link></Typography>
           {isMatch ?
             <Button color='inherit' onClick={() => setOpenDrawer(!openDrawer)}>
               <MenuIcon className={classes.menuButton} />
@@ -39,13 +39,13 @@ const Navbar = ({ darkMode, setDarkMode }) => {
                     <IoHome />
                   </Button>
                 </Link>
-                <Link to='skills' activeClass={classes.active} spy smooth={true} offset={-60} duration={1000}>
+                <Link to='skills' activeClass={classes.active} spy smooth offset={-60} duration={1000}>
                   <Button className={classes.menuButton} color="inherit">Skills</Button>
                 </Link>
-                <Link to='projects' activeClass={classes.active} spy smooth={true} offset={-60} duration={1000}>
+                <Link to='projects' activeClass={classes.active} spy smooth offset={-60} duration={1000}>
                   <Button className={classes.menuButton} color="inherit">Projects</Button>
                 </Link>
-                <Link to='about' activeClass={classes.active} spy smooth={true} duration={1000}>
+                <Link to='about' activeClass={classes.active} spy smooth duration={1000}>
                   <Button className={classes.menuButton} color="inherit">About</Button>
                 </Link>
                 {/* <Link to='contact' spy smooth={true} duration={1000}>
