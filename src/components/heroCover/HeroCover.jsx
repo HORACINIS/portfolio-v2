@@ -8,6 +8,7 @@ import TwitterIcon from '@material-ui/icons/Twitter';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import Paper from '@material-ui/core/Paper';
 import IconButton from '@material-ui/core/IconButton';
+// import { motion } from 'framer-motion';
 import { useStyles } from './HeroCoverStyles';
 
 const HeroCover = () => {
@@ -15,13 +16,15 @@ const HeroCover = () => {
   return (
     <Paper className={classes.root} id='home' square>
       <Grid container justify='center' direction='column'>
-        <Typography
-          className={classes.welcomeText}
-          variant='h2'
-          align='center'
-        >
-          Welcome to my portfolio.
-        </Typography>
+        <div>
+          <Typography
+            className={classes.welcomeText}
+            variant='h2'
+            align='center'
+          >
+            Welcome to my portfolio.
+          </Typography>
+        </div>
         <Typography
           className={classes.introText}
           variant='h5'
