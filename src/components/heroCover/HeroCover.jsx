@@ -8,7 +8,7 @@ import TwitterIcon from '@material-ui/icons/Twitter';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import Paper from '@material-ui/core/Paper';
 import IconButton from '@material-ui/core/IconButton';
-// import { motion } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { useStyles } from './HeroCoverStyles';
 
 const HeroCover = () => {
@@ -16,38 +16,42 @@ const HeroCover = () => {
   return (
     <Paper className={classes.root} id='home' square>
       <Grid container justify='center' direction='column'>
-        <div>
-          <Typography
-            className={classes.welcomeText}
-            variant='h2'
-            align='center'
-          >
-            Welcome to my portfolio.
-          </Typography>
-        </div>
+        <Typography
+          className={classes.welcomeText}
+          variant='h2'
+          align='center'
+        >
+          Welcome to my portfolio.
+        </Typography>
         <Typography
           className={classes.introText}
           variant='h5'
           align='center'
         >
-          I'm Horacio Moran, junior Software Developer.
+          I'm <motion.span animate={{ color: '#ffb300', background: '#424242' }} transition={{ duration: 2 }}>Horacio Moran</motion.span>, junior Software Developer.
         </Typography>
         <Avatar alt="Horacio" src={avatar} className={classes.avatar} />
         <Grid justify='center' item container className={classes.heroCoverIconsContainer} >
           <Grid item>
-            <IconButton href='https://github.com/HORACINIS' target='_blank' aria-label='github' >
-              <GitHubIcon className={classes.heroCoverIcons} />
-            </IconButton>
+            <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.5 }}>
+              <IconButton href='https://github.com/HORACINIS' target='_blank' aria-label='github' >
+                <GitHubIcon className={classes.heroCoverIcons} />
+              </IconButton>
+            </motion.div>
           </Grid>
           <Grid item>
-            <IconButton href='https://twitter.com/horacinis' target='_blank' aria-label='twitter'>
-              <TwitterIcon className={classes.heroCoverIcons} />
-            </IconButton>
+            <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.5 }}>
+              <IconButton href='https://twitter.com/horacinis' target='_blank' aria-label='twitter'>
+                <TwitterIcon className={classes.heroCoverIcons} />
+              </IconButton>
+            </motion.div>
           </Grid>
           <Grid item>
-            <IconButton href='https://www.linkedin.com/in/horacio-moran-837a891b4/' target='_blank' aria-label='linkedin'>
-              <LinkedInIcon className={classes.heroCoverIcons} />
-            </IconButton>
+            <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.5 }}>
+              <IconButton href='https://www.linkedin.com/in/horacio-moran-837a891b4/' target='_blank' aria-label='linkedin'>
+                <LinkedInIcon className={classes.heroCoverIcons} />
+              </IconButton>
+            </motion.div>
           </Grid>
         </Grid>
       </Grid>
