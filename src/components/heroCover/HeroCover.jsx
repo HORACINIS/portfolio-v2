@@ -51,7 +51,7 @@ const HeroCover = () => {
             variant='h5'
             align='center'
           >
-            I'm <motion.span animate={{ color: '#ffb300', background: '#424242' }} transition={{ duration: 4 }}>Horacio Moran</motion.span>, junior Software Developer.
+            I'm <motion.span animate={{ color: '#ffb300', background: '#424242' }} transition={{delay: 1.5, duration: 1 }}>Horacio Moran</motion.span>, junior Software Developer.
         </Typography>
         </motion.div>
         <motion.div initial={{ opacity: 0 }}
