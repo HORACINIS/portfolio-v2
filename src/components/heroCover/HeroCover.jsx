@@ -52,7 +52,7 @@ const HeroCover = () => {
         <Avatar alt="Horacio" src={avatar} className={classes.avatar} />
         <Grid justify='center' item container className={classes.heroCoverIconsContainer} >
           {formsOfContact.map((item) => (
-            <Grid item>
+            <Grid item key={item.name}>
               <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.5 }}>
                 <IconButton href={item.url} target='_blank' aria-label={item.name} >
                   {item.icon}
