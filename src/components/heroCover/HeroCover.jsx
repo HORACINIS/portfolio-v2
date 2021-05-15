@@ -35,7 +35,10 @@ const HeroCover = () => {
   return (
     <Paper className={classes.root} id='home' square>
       <Grid container justify='center' direction='column'>
-        <motion.div initial={{ y: 200, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 1.5 }}>
+        <motion.div
+          initial={{ y: 100, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 1.5 }}>
           <Typography
             className={classes.welcomeText}
             variant='h2'
@@ -48,10 +51,12 @@ const HeroCover = () => {
             variant='h5'
             align='center'
           >
-            I'm <motion.span animate={{ color: '#ffb300', background: '#424242' }} transition={{ duration: 4 }}>Horacio Moran</motion.span>, junior Software Developer.
+            I'm <motion.span animate={{ color: '#ffb300', background: '#424242' }} transition={{delay: 1.5, duration: 1 }}>Horacio Moran</motion.span>, junior Software Developer.
         </Typography>
         </motion.div>
-        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1.5 }}>
+        <motion.div initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1.5 }}>
           <Avatar alt="Horacio" src={avatar} className={classes.avatar} />
           <Grid justify='center' item container className={classes.heroCoverIconsContainer} >
             {formsOfContact.map((item) => (

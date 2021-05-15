@@ -12,6 +12,7 @@ import { useTheme } from '@material-ui/core/styles';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
 import { Link } from 'react-scroll';
 import { useStyles } from './NavbarStyles';
+import { motion } from 'framer-motion';
 
 const Navbar = ({ darkMode, setDarkMode }) => {
 
@@ -27,7 +28,16 @@ const Navbar = ({ darkMode, setDarkMode }) => {
       <CssBaseline />
       <AppBar className={classes.root}>
         <Toolbar>
-          <Typography className={classes.namePosition} variant="h6"><Link to='home' smooth offset={-60} duration={1000}><Button className={classes.nameColour}>Horacio M.</Button></Link></Typography>
+          <Typography className={classes.namePosition} variant="h6">
+            <Link to='home' smooth offset={-60} duration={1000}>
+              <motion.div
+                initial={{ x: '100vw' }}
+                animate={{ x: 0 }}
+                transition={{ type: 'spring', delay: 1 }}>
+                <Button className={classes.nameColour}>Horacio M.</Button>
+              </motion.div>
+            </Link>
+          </Typography>
           {isMatch ?
             <Button color='inherit' onClick={() => setOpenDrawer(!openDrawer)}>
               <MenuIcon className={classes.menuButton} />
