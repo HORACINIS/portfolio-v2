@@ -35,7 +35,7 @@ const HeroCover = () => {
   return (
     <Paper className={classes.root} id='home' square>
       <Grid container justify='center' direction='column'>
-        <motion.div initial={{ y: 200, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 1.5 }}>
+        <motion.div initial={{ y: 100, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 1.5 }}>
           <Typography
             className={classes.welcomeText}
             variant='h2'
