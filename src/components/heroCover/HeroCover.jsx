@@ -35,32 +35,36 @@ const HeroCover = () => {
   return (
     <Paper className={classes.root} id='home' square>
       <Grid container justify='center' direction='column'>
-        <Typography
-          className={classes.welcomeText}
-          variant='h2'
-          align='center'
-        >
-          Welcome to my portfolio.
+        <motion.div initial={{ y: 200, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 1.5 }}>
+          <Typography
+            className={classes.welcomeText}
+            variant='h2'
+            align='center'
+          >
+            Welcome to my portfolio.
         </Typography>
-        <Typography
-          className={classes.introText}
-          variant='h5'
-          align='center'
-        >
-          I'm <motion.span animate={{ color: '#ffb300', background: '#424242' }} transition={{ duration: 2 }}>Horacio Moran</motion.span>, junior Software Developer.
+          <Typography
+            className={classes.introText}
+            variant='h5'
+            align='center'
+          >
+            I'm <motion.span animate={{ color: '#ffb300', background: '#424242' }} transition={{ duration: 4 }}>Horacio Moran</motion.span>, junior Software Developer.
         </Typography>
-        <Avatar alt="Horacio" src={avatar} className={classes.avatar} />
-        <Grid justify='center' item container className={classes.heroCoverIconsContainer} >
-          {formsOfContact.map((item) => (
-            <Grid item key={item.name}>
-              <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.5 }}>
-                <IconButton href={item.url} target='_blank' aria-label={item.name} >
-                  {item.icon}
-                </IconButton>
-              </motion.div>
-            </Grid>
-          ))}
-        </Grid>
+        </motion.div>
+        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1.5 }}>
+          <Avatar alt="Horacio" src={avatar} className={classes.avatar} />
+          <Grid justify='center' item container className={classes.heroCoverIconsContainer} >
+            {formsOfContact.map((item) => (
+              <Grid item key={item.name}>
+                <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.5 }}>
+                  <IconButton href={item.url} target='_blank' aria-label={item.name} >
+                    {item.icon}
+                  </IconButton>
+                </motion.div>
+              </Grid>
+            ))}
+          </Grid>
+        </motion.div>
       </Grid>
     </Paper>
   )
