@@ -5,7 +5,7 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 import TwitterIcon from '@material-ui/icons/Twitter';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import EmailIcon from '@material-ui/icons/Email';
-import Button from '@material-ui/core/Button';
+import { iconsEffects } from './BottomNavbarEffects';
 import { motion } from 'framer-motion';
 import { useStyles } from './BottomNavbarStyles';
 
@@ -53,9 +53,9 @@ const BottomNavbar = () => {
           target='_blank'
           icon={
             <motion.div
-              whileHover={{ scale: 1.5 }}
-              whileTap={{ scale: 0.5 }}
-              transition={{ type: 'spring', stiffness: 300 }}
+              whileHover={iconsEffects.hover}
+              whileTap={iconsEffects.whileTap}
+              transition={iconsEffects.trans}
             >
               {item.icon}
             </motion.div>} />
