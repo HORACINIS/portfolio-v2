@@ -51,7 +51,7 @@ const HeroCover = () => {
             variant='h5'
             align='center'
           >
-            I'm <motion.span animate={{ color: '#ffb300', background: '#424242' }} transition={{delay: 1.5, duration: 1 }}>Horacio Moran</motion.span>, junior Software Developer.
+            I'm <motion.span animate={{ color: '#ffb300', background: '#424242' }} transition={{ delay: 1.5, duration: 1 }}>Horacio Moran</motion.span>, junior Software Developer.
         </Typography>
         </motion.div>
         <motion.div initial={{ opacity: 0 }}
@@ -61,7 +61,10 @@ const HeroCover = () => {
           <Grid justify='center' item container className={classes.heroCoverIconsContainer} >
             {formsOfContact.map((item) => (
               <Grid item key={item.name}>
-                <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.5 }}>
+                <motion.div
+                  whileHover={{ scale: 1.3 }}
+                  whileTap={{ scale: 0.5 }}
+                  transition={{ type: 'spring', stiffness: 300 }}>
                   <IconButton href={item.url} target='_blank' aria-label={item.name} >
                     {item.icon}
                   </IconButton>
