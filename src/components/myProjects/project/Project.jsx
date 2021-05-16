@@ -24,7 +24,7 @@ const Project = ({ title, intro, body, img, iconsTechUsed, links, links: { siteL
   };
 
   return (
-    <motion.div whileHover={{ scale: 1.01 }} transition={{duration: 0.3}}>
+    <motion.div whileHover={{ scale: 1.01 }} transition={{ duration: 0.3 }}>
       <Card className={classes.root} raised>
         {/* <CardActionArea> */}
         <CardHeader
@@ -59,7 +59,13 @@ const Project = ({ title, intro, body, img, iconsTechUsed, links, links: { siteL
               aria-expanded={expanded}
               aria-label="show more"
             >
-              <ExpandMoreIcon />
+              <motion.div
+                whileHover={{ scale: 1.5 }}
+                whileTap={{ scale: 0.5 }}
+                transition={{ type: 'spring', stiffness: 300 }}
+              >
+                <ExpandMoreIcon />
+              </motion.div>
             </IconButton>
           }
         </CardActions>
@@ -69,13 +75,24 @@ const Project = ({ title, intro, body, img, iconsTechUsed, links, links: { siteL
             {/* no siteLive icon will be displayed if there isn't a siteLive in the projectsList object file */}
             {siteLive &&
               <IconButton className={classes.linksIcons} aria-label='site live' target='_blank' href={siteLive}>
-                <BiWorld />
+                <motion.div
+                  whileHover={{ scale: 1.3 }}
+                  whileTap={{ scale: 0.5 }}
+                  transition={{ type: 'spring', stiffness: 300 }}>
+                  <BiWorld />
+                </motion.div>
               </IconButton>
             }
             {/* no github icon will be displayed if there isn't a repoURL in the projectsList object file */}
             {repoURL &&
               <IconButton className={classes.linksIcons} aria-label='repo url' target='_blank' href={repoURL}>
-                <SiGithub />
+                <motion.div
+                  whileHover={{ scale: 1.3 }}
+                  whileTap={{ scale: 0.5 }}
+                  transition={{ type: 'spring', stiffness: 300 }}
+                >
+                  <SiGithub />
+                </motion.div>
               </IconButton>
             }
           </CardContent>
