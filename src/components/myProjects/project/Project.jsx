@@ -36,8 +36,7 @@ const Project = ({ title, intro, body, img, iconsTechUsed, links, links: { siteL
         transition: {
           duration: 1,
         },
-
-      })
+      });
     }
     if (!inView) {
       animation.start({
@@ -45,7 +44,7 @@ const Project = ({ title, intro, body, img, iconsTechUsed, links, links: { siteL
         opacity: 0
       })
     }
-  }, [inView, animation])
+  }, [inView, animation]);
 
   return (
     <div ref={ref}>
