@@ -65,7 +65,7 @@ const skillsList = [
 const Skills = () => {
   const classes = useStyles();
 
-  const { ref, inView } = useInView({ threshold: 0.6 });
+  const { ref, inView } = useInView({ threshold: 0.6, triggerOnce: true });
   const animation = useAnimation();
 
   useEffect(() => {

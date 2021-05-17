@@ -24,8 +24,7 @@ const Project = ({ title, intro, body, img, iconsTechUsed, links, links: { siteL
     setExpanded(!expanded);
   };
 
-
-  const { ref, inView } = useInView({ threshold: 0.2 });
+  const { ref, inView } = useInView({ threshold: 0.2, triggerOnce: true });
   const animation = useAnimation();
 
   useEffect(() => {
@@ -34,15 +33,17 @@ const Project = ({ title, intro, body, img, iconsTechUsed, links, links: { siteL
         x: 0,
         opacity: 1,
         transition: {
-          duration: 1,
+          duration: 2,
+          type: 'spring',
+          bounce: 0.5 
         },
       });
     }
     if (!inView) {
       animation.start({
-        // x: -1200,
+        x: -1200,
         opacity: 0
-      })
+      });
     }
   }, [inView, animation]);
 
