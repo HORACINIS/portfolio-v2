@@ -46,7 +46,9 @@ export const useStyles = makeStyles((theme) => ({
     fontFamily: 'sans-serif',
     fontSize: '20px',
     // fontSize: '2vh',
-    marginTop: '50px'
+    marginTop: '50px',
+    // backdropFilter: theme.palette.type === 'light' && 'blur(6px)'
+    backdropFilter: 'blur(6px)'
   },
   name: {
     textTransform: 'uppercase',
@@ -55,6 +57,9 @@ export const useStyles = makeStyles((theme) => ({
     letterSpacing: '1.5px'
   },
   bottomText: {
-    fontSize: '17px'
+    fontSize: '17px',
+  },
+  showMoreBtn: {
+    marginTop: 20,
   }
-}))
+}));
