@@ -30,7 +30,7 @@ const AboutMe = () => {
         </Typography>
         <Button
           className={classes.showMoreBtn}
-          variant='contained'
+          variant='outlined'
           onClick={() => setShowMore(!showMore)}
         >
           {showMore ? 'Show less' : 'Show more'}
