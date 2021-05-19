@@ -35,7 +35,7 @@ const Project = ({ title, intro, body, img, iconsTechUsed, links, links: { siteL
         transition: {
           duration: 2,
           type: 'spring',
-          bounce: 0.5 
+          bounce: 0.5
         },
       });
     }

@@ -4,6 +4,7 @@ import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
 import Container from '@material-ui/core/Container'
 import Button from '@material-ui/core/Button';
+import { GrDocumentText } from 'react-icons/gr';
 import { useStyles } from './AboutMeStyles';
 
 const AboutMe = () => {
@@ -23,9 +24,26 @@ const AboutMe = () => {
           a one-month internship at Leap Dev where I was part of a team and got
           to contribute towards a real-world project.
         {showMore && (
-            <Typography variant='subtitle1' className={classes.textContent}>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam deserunt unde dolorum placeat dolorem culpa qui natus laboriosam accusamus ab, error facilis! Laudantium porro numquam id recusandae eos, voluptas explicabo nihil rem, fuga et tenetur, distinctio officia quia eaque iste doloribus commodi consequatur adipisci eligendi aut ex reiciendis. Suscipit placeat, porro id incidunt magni dolor fugit saepe sint itaque delectus dicta eaque? Esse natus voluptas animi repellendus nulla tempore unde voluptate doloribus necessitatibus nesciunt, blanditiis distinctio quidem! Voluptatum, debitis reprehenderit. 
-            </Typography>
+            <div>
+              <Typography variant='subtitle1' className={classes.textContent}>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam deserunt unde dolorum placeat dolorem culpa qui natus laboriosam accusamus ab, error facilis! Laudantium porro numquam id recusandae eos, voluptas explicabo nihil rem, fuga et tenetur, distinctio officia quia eaque iste doloribus commodi consequatur adipisci eligendi aut ex reiciendis. Suscipit placeat, porro id incidunt magni dolor fugit saepe sint itaque delectus dicta eaque? Esse natus voluptas animi repellendus nulla tempore unde voluptate doloribus necessitatibus nesciunt, blanditiis distinctio quidem! Voluptatum, debitis reprehenderit.
+              </Typography>
+
+              <Button
+                href='https://1drv.ms/b/s!AmXok3_c1XWpgZVumKkoVxOEb3BfJg?e=cVUeBU'
+                target='_blank'
+                variant="contained"
+                color='primary'
+                className={classes.resumeBtn}
+                startIcon={<GrDocumentText />}
+              >
+                My Resume
+              </Button>
+
+              <Typography variant='subtitle1' className={classes.textContent}>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam deserunt unde dolorum placeat dolorem culpa qui natus laboriosam accusamus ab, error facilis! Laudantium porro numquam id recusandae eos, voluptas explicabo nihil rem, fuga et tenetur, distinctio officia quia eaque iste doloribus commodi consequatur adipisci eligendi aut ex reiciendis. Suscipit placeat, porro id incidunt magni dolor fugit saepe sint itaque delectus dicta eaque? Esse natus voluptas animi repellendus nulla tempore unde voluptate doloribus necessitatibus nesciunt, blanditiis distinctio quidem! Voluptatum, debitis reprehenderit.
+              </Typography>
+            </div>
           )}
         </Typography>
         <Button

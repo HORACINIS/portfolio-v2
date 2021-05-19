@@ -59,7 +59,10 @@ export const useStyles = makeStyles((theme) => ({
   bottomText: {
     fontSize: '17px',
   },
+  resumeBtn: {
+    marginTop: 30
+  },
   showMoreBtn: {
-    marginTop: 20,
+    marginTop: 50,
   }
 }));

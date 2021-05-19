@@ -82,7 +82,7 @@ export const projectsList = [
     img: portfolio_v1,
     iconsTechUsed: [html, css, javaScript,],
     links: {
-      siteLive: 'https://www.horacinis.com/',
+      siteLive: 'https://horacinis.netlify.app/',
       repoURL: 'https://github.com/HORACINIS/assignment_2_portfolio'
     }
   },

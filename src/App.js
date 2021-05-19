@@ -15,9 +15,9 @@ function App() {
     palette: {
       type: 'dark',
 
-      // primary: {
-      //   main: '#008000' 
-      // }
+      primary: {
+        main: '#f50057'
+      }
     }
   });
   const lightTheme = createMuiTheme({
