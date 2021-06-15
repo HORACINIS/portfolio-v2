@@ -56,7 +56,6 @@ const Project = ({ title, intro, body, img, iconsTechUsed, links, links: { siteL
         <Card className={classes.root} raised>
           {/* <CardActionArea> */}
           <CardHeader
-            // className={classes.header}
             title={title} // title
             subheader={intro}  // subtitle 
           />
