@@ -6,31 +6,11 @@ import Projects from './components/myProjects/projects/Projects';
 import AboutMe from './components/aboutMe/AboutMe';
 // import ContactMe from './components/contactMe/ContactMe';
 import BottomNavbar from './components/nav/bottomNavbar/BottomNavbar';
-import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
+import { ThemeProvider } from '@material-ui/core/styles';
+import { darkTheme, lightTheme } from './Theme';
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
-
-  const darkTheme = createMuiTheme({
-    palette: {
-      type: 'dark',
-
-      primary: {
-        main: '#f50057'
-      }
-    }
-  });
-  const lightTheme = createMuiTheme({
-    palette: {
-      type: 'light',
-      primary: {
-        main: '#ffb300',
-        light: '#ffe54c',
-        dark: '#c68400',
-        constrastText: '#000000'
-      }
-    }
-  });
 
   const getThemeFromStorage = () => {
     const reference = localStorage.getItem('darkMode');
