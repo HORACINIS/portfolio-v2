@@ -25,9 +25,10 @@ const AboutMe = () => {
           to contribute towards a real-world project.
         {showMore && (
             <div>
-              <Typography variant='subtitle1' className={classes.textContent}>
+              {/* text to be added below */}
+              {/* <Typography variant='subtitle1' className={classes.textContent}>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam deserunt unde dolorum placeat dolorem culpa qui natus laboriosam accusamus ab, error facilis! Laudantium porro numquam id recusandae eos, voluptas explicabo nihil rem, fuga et tenetur, distinctio officia quia eaque iste doloribus commodi consequatur adipisci eligendi aut ex reiciendis. Suscipit placeat, porro id incidunt magni dolor fugit saepe sint itaque delectus dicta eaque? Esse natus voluptas animi repellendus nulla tempore unde voluptate doloribus necessitatibus nesciunt, blanditiis distinctio quidem! Voluptatum, debitis reprehenderit.
-              </Typography>
+              </Typography> */}
 
               <Button
                 href='https://1drv.ms/b/s!AmXok3_c1XWpgZVumKkoVxOEb3BfJg?e=cVUeBU'
@@ -40,9 +41,10 @@ const AboutMe = () => {
                 My Resume
               </Button>
 
-              <Typography variant='subtitle1' className={classes.textContent}>
+              {/* text to be added below */}
+              {/* <Typography variant='subtitle1' className={classes.textContent}>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam deserunt unde dolorum placeat dolorem culpa qui natus laboriosam accusamus ab, error facilis! Laudantium porro numquam id recusandae eos, voluptas explicabo nihil rem, fuga et tenetur, distinctio officia quia eaque iste doloribus commodi consequatur adipisci eligendi aut ex reiciendis. Suscipit placeat, porro id incidunt magni dolor fugit saepe sint itaque delectus dicta eaque? Esse natus voluptas animi repellendus nulla tempore unde voluptate doloribus necessitatibus nesciunt, blanditiis distinctio quidem! Voluptatum, debitis reprehenderit.
-              </Typography>
+              </Typography> */}
             </div>
           )}
         </Typography>
