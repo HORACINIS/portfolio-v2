@@ -23,7 +23,7 @@ const AboutMe = () => {
           an intensive full-time bootcamp at Coder Academy Sydney, subsequently,
           a one-month internship at Leap Dev where I was part of a team and got
           to contribute towards a real-world project.
-        {showMore && (
+          {showMore && (
             <div>
               {/* text to be added below */}
               {/* <Typography variant='subtitle1' className={classes.textContent}>
@@ -41,10 +41,19 @@ const AboutMe = () => {
                 My Resume
               </Button>
 
-              {/* text to be added below */}
+              {/* text to be added below (template) */}
               {/* <Typography variant='subtitle1' className={classes.textContent}>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam deserunt unde dolorum placeat dolorem culpa qui natus laboriosam accusamus ab, error facilis! Laudantium porro numquam id recusandae eos, voluptas explicabo nihil rem, fuga et tenetur, distinctio officia quia eaque iste doloribus commodi consequatur adipisci eligendi aut ex reiciendis. Suscipit placeat, porro id incidunt magni dolor fugit saepe sint itaque delectus dicta eaque? Esse natus voluptas animi repellendus nulla tempore unde voluptate doloribus necessitatibus nesciunt, blanditiis distinctio quidem! Voluptatum, debitis reprehenderit.
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
               </Typography> */}
+              <Typography variant='subtitle1' className={classes.textContent}>
+                I worked as a barista in a busy environment for over 5 years, and as much as I enjoyed it, I feel as though I'm ready for another stage in my career. A new challenge!
+              </Typography>
+              <Typography className={classes.textContent}>
+                I decided to quit my job as a barista and enrolled into a coding bootcamp at Coder Academy Sydney to begin my journey to become a full stack software developer. It was tough and difficult as it was intensive and nonstop, and I had to be travelling to Sydney back and forth every week for it, but it was totally worth it. It made me realise that I genuinely enjoy learning and solving problems, it is highly rewarding!
+              </Typography>
+              <Typography variant='subtitle1' className={classes.textContent}>
+                During my time at Leap Dev, I worked with technologies such as HTML, CSS, JavaScript and React for developing an ongoing project for law firms. I worked collaboratively in a team of five and communicated closely with the design team and worked with the designs created by them with Figma. We used JIRA for project management, such as assigning user stories. Bitbucket was the GIT repository management chosen for pulling and committing the developed content from/to GIT repository.
+              </Typography>
             </div>
           )}
         </Typography>
