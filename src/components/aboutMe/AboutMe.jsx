@@ -40,19 +40,39 @@ const AboutMe = () => {
               >
                 My Resume
               </Button>
-
-              {/* text to be added below (template) */}
-              {/* <Typography variant='subtitle1' className={classes.textContent}>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              </Typography> */}
               <Typography variant='subtitle1' className={classes.textContent}>
-                I worked as a barista in a busy environment for over 5 years, and as much as I enjoyed it, I feel as though I'm ready for another stage in my career. A new challenge!
+                I worked as a barista in a busy environment for over 5 years, and as much as I enjoyed it,
+                I feel as though I'm ready for another stage in my career. A new challenge!
               </Typography>
               <Typography className={classes.textContent}>
-                I decided to quit my job as a barista and enrolled into a coding bootcamp at Coder Academy Sydney to begin my journey to become a full stack software developer. It was tough and difficult as it was intensive and nonstop, and I had to be travelling to Sydney back and forth every week for it, but it was totally worth it. It made me realise that I genuinely enjoy learning and solving problems, it is highly rewarding!
+                I decided to quit my job as a barista and enrolled into a coding bootcamp at Coder Academy
+                Sydney to begin my journey to become a full stack software developer. It was tough and difficult
+                as it was intensive and nonstop, and I had to be travelling to Sydney back and forth every week
+                for it, but it was totally worth it. It made me realise that I genuinely enjoy learning and
+                solving problems, it is highly rewarding!
               </Typography>
               <Typography variant='subtitle1' className={classes.textContent}>
-                During my time at Leap Dev, I worked with technologies such as HTML, CSS, JavaScript and React for developing an ongoing project for law firms. I worked collaboratively in a team of five and communicated closely with the design team and worked with the designs created by them with Figma. We used JIRA for project management, such as assigning user stories. Bitbucket was the GIT repository management chosen for pulling and committing the developed content from/to GIT repository.
+                During my time at Leap Dev, I worked with technologies such as HTML, CSS, JavaScript and React
+                for developing an ongoing project for law firms. I worked collaboratively in a team of five and
+                communicated closely with the design team and worked with the designs created by them with Figma.
+                We used JIRA for project management, such as assigning user stories. Bitbucket was the GIT repository
+                management chosen for pulling and committing the developed content from/to GIT repository.
+              </Typography>
+              <hr />
+
+              <Typography variant='h6' className={classes.textContent}>
+                I was born in Chile, and moved to this beautiful country in 2003. I am fluent in both
+                English and Spanish.
+              </Typography>
+
+              <Typography variant='h6'>
+                I am a sociable person; I like spending time with family and friends,
+                I also enjoy playing guitar and going to the gym as I think it is important
+                for a healthy mind.
+              </Typography>
+              <Typography variant='h6'>
+                I love technology. I am always watching reviews and reading about the latest
+                technological devices that are coming out. My native language is Spanish.
               </Typography>
             </div>
           )}
@@ -64,12 +84,6 @@ const AboutMe = () => {
         >
           {showMore ? 'Show less' : 'Show more'}
         </Button>
-
-
-        {/* <h5 className={classes.name}>Horacio</h5>
-        <p className={classes.bottomText}>
-        Lorem ipsum dolor sit amet consectetur.
-          </p> */}
       </Container>
     </Paper>
   )
