@@ -61,7 +61,7 @@ const AboutMe = () => {
               <hr />
 
               <Typography variant='h6' className={classes.textContent}>
-                I was born in Chile, and moved to this beautiful country in 2003. I am fluent in both
+                I was born in Santiago, Chile. In 2003, I moved to Australia. I am fluent in both
                 English and Spanish.
               </Typography>
 
