@@ -40,6 +40,21 @@ const AboutMe = () => {
               >
                 My Resume
               </Button>
+              <Typography variant='h6' className={classes.textContent}>
+                I was born in Santiago, Chile. In 2003, I moved to Australia. I am fluent in both
+                English and Spanish.
+              </Typography>
+
+              <Typography variant='h6'>
+                I am a sociable person; I like spending time with family and friends,
+                I also enjoy playing guitar and going to the gym as I think it is important
+                for a healthy mind.
+              </Typography>
+              <Typography variant='h6'>
+                I love technology. I am always watching reviews and reading about the latest
+                technological devices that are coming out. My native language is Spanish.
+              </Typography>
+              <hr />
               <Typography variant='subtitle1' className={classes.textContent}>
                 I worked as a barista in a busy environment for over 5 years, and as much as I enjoyed it,
                 I feel as though I'm ready for another stage in my career. A new challenge!
@@ -58,22 +73,17 @@ const AboutMe = () => {
                 We used JIRA for project management, such as assigning user stories. Bitbucket was the GIT repository
                 management chosen for pulling and committing the developed content from/to GIT repository.
               </Typography>
-              <hr />
 
-              <Typography variant='h6' className={classes.textContent}>
-                I was born in Santiago, Chile. In 2003, I moved to Australia. I am fluent in both
-                English and Spanish.
+              <Typography variant='subtitle1' className={classes.textContent}>
+                Currently, I am mastering my skills of <b>NodeJS, Express and Mongoose</b>. My projects using these
+                technologies, are allowing me to build server-side applications which have the flexibility to
+                integrate with my existing projects, as well as future ones.
               </Typography>
-
-              <Typography variant='h6'>
-                I am a sociable person; I like spending time with family and friends,
-                I also enjoy playing guitar and going to the gym as I think it is important
-                for a healthy mind.
-              </Typography>
-              <Typography variant='h6'>
-                I love technology. I am always watching reviews and reading about the latest
-                technological devices that are coming out. My native language is Spanish.
-              </Typography>
+              {/* <Typography variant='subtitle1' className={classes.textContent}>
+                Currently, I am working on growing my skills by teaching myself NodeJS, 
+                Express and Mongoose so that I can build server-side applications which 
+                can then be integrated to some of my current and future projects
+              </Typography> */}
             </div>
           )}
         </Typography>
