@@ -61,7 +61,6 @@ export const projectsList = [
     img: lyrics_x,
     iconsTechUsed: [javaScript, react, bootstrap],
     links: {
-      // siteLive: 'https://lyrics-finder-horacinis.netlify.app/',
       siteLive: 'https://lyrics-finder-horacinis.netlify.app/',
       repoURL: 'https://github.com/HORACINIS/lyrics-finder'
     }
