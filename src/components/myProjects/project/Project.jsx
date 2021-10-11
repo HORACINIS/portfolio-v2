@@ -122,7 +122,7 @@ const Project = ({ title, intro, body, img, iconsTechUsed, links, links: { siteL
                   </motion.div>
                 </IconButton>
               }
-
+              {/* no second github icon will be displayed if there isn't a repoURL_2 in the projectsList object file */}
               {repoURL_2 &&
                 <IconButton className={classes.linksIcons} aria-label='repo url' target='_blank' href={repoURL_2}>
                   <motion.div
