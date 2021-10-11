@@ -42,7 +42,8 @@ export const projectsList = [
     iconsTechUsed: [react, node, mongo, express, aws, materialUI],
     links: {
       siteLive: 'https://horacinis-tech-store.netlify.app/',
-      repoURL: 'https://github.com/HORACINIS/horacinis-tech-store-client'
+      repoURL: 'https://github.com/HORACINIS/horacinis-tech-store-client',
+      repoURL_2: 'https://github.com/HORACINIS/horacinis-tech-store-server'
     }
   },
   {

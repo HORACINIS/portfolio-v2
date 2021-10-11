@@ -17,7 +17,7 @@ import { SiGithub } from 'react-icons/si';
 import { useStyles } from './ProjectStyles';
 
 
-const Project = ({ title, intro, body, img, iconsTechUsed, links, links: { siteLive, repoURL } }) => {
+const Project = ({ title, intro, body, img, iconsTechUsed, links, links: { siteLive, repoURL, repoURL_2 } }) => {
   const classes = useStyles();
   const [expanded, setExpanded] = React.useState(false);
   const handleExpandClick = () => {
@@ -98,7 +98,7 @@ const Project = ({ title, intro, body, img, iconsTechUsed, links, links: { siteL
           </CardActions>
           <Collapse in={expanded} timeout="auto" unmountOnExit>
             <CardContent>
-              <Typography paragraph>{siteLive || repoURL ? 'Links' : 'No Links'}</Typography>
+              <Typography paragraph>{siteLive || repoURL || repoURL_2 ? 'Links' : 'No Links'}</Typography>
               {/* no siteLive icon will be displayed if there isn't a siteLive in the projectsList object file */}
               {siteLive &&
                 <IconButton className={classes.linksIcons} aria-label='site live' target='_blank' href={siteLive}>
@@ -113,6 +113,18 @@ const Project = ({ title, intro, body, img, iconsTechUsed, links, links: { siteL
               {/* no github icon will be displayed if there isn't a repoURL in the projectsList object file */}
               {repoURL &&
                 <IconButton className={classes.linksIcons} aria-label='repo url' target='_blank' href={repoURL}>
+                  <motion.div
+                    whileHover={{ scale: 1.3 }}
+                    whileTap={{ scale: 0.5 }}
+                    transition={{ type: 'spring', stiffness: 300 }}
+                  >
+                    <SiGithub />
+                  </motion.div>
+                </IconButton>
+              }
+
+              {repoURL_2 &&
+                <IconButton className={classes.linksIcons} aria-label='repo url' target='_blank' href={repoURL_2}>
                   <motion.div
                     whileHover={{ scale: 1.3 }}
                     whileTap={{ scale: 0.5 }}
