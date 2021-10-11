@@ -14,8 +14,8 @@ import { useStyles } from './SkillsStyles';
 
 
 // icons of tech used
-import { SiCss3, SiJavascript, SiReact, SiRails, SiPostgresql, SiBootstrap, SiMaterialUi } from 'react-icons/si';
-import { DiRuby } from 'react-icons/di';
+import { SiCss3, SiJavascript, SiReact, SiRubyonrails, SiPostgresql, SiBootstrap, SiMaterialui, SiMongodb, SiExpress } from 'react-icons/si';
+import { DiRuby, DiNodejsSmall } from 'react-icons/di';
 import { ImHtmlFive } from 'react-icons/im';
 import { FaGitAlt } from 'react-icons/fa';
 
@@ -37,11 +37,23 @@ const skillsList = [
     name: 'React'
   },
   {
+    icon: <SiMongodb />,
+    name: 'MongoDB'
+  },
+  {
+    icon: <SiExpress />,
+    name: 'Express'
+  },
+  {
+    icon: <DiNodejsSmall />,
+    name: "Node.js"
+  },
+  {
     icon: <DiRuby />,
     name: 'Ruby'
   },
   {
-    icon: <SiRails />,
+    icon: <SiRubyonrails />,
     name: 'Ruby on Rails'
   },
   {
@@ -53,7 +65,7 @@ const skillsList = [
     name: 'Bootstrap'
   },
   {
-    icon: <SiMaterialUi />,
+    icon: <SiMaterialui />,
     name: 'Material-UI'
   },
   {

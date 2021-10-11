@@ -1,5 +1,5 @@
 // icons of tech used
-import { SiJavascript, SiReact, SiRails, SiCss3, SiMongodb, SiBootstrap, SiAmazonaws, SiPostgresql } from 'react-icons/si';
+import { SiJavascript, SiReact, SiRubyonrails, SiCss3, SiMongodb, SiBootstrap, SiAmazonaws, SiPostgresql, SiMaterialui, SiExpress } from 'react-icons/si';
 import { DiRuby, DiNodejsSmall } from 'react-icons/di';
 import { ImHtmlFive } from 'react-icons/im';
 import { FaCcStripe } from 'react-icons/fa';
@@ -14,24 +14,37 @@ import honey_homage from '../images/honey_homage.jpg';
 import portfolio_v1 from '../images/portfolio_v1.jpg';
 import horacinis_cafe from '../images/horacinis_cafe.jpg';
 import project_coming from '../images/project_coming.jpg';
+import horacinis_tech_store from '../images/horacinis_tech_store.jpg';
 
 // icon variables for tech use - fit a maximum of 6 per project card
 const html = <ImHtmlFive />;
 const css = <SiCss3 />;
 const javaScript = <SiJavascript />;
 const react = <SiReact />;
+const express = <SiExpress />;
 const node = <DiNodejsSmall />;
 const mongo = <SiMongodb />;
 const ruby = <DiRuby />;
-const rails = <SiRails />;
+const rails = <SiRubyonrails />;
 const terminal = <BsTerminalFill />;
 const bootstrap = <SiBootstrap />;
+const materialUI = <SiMaterialui />;
 const aws = <SiAmazonaws />;
 const stripe = <FaCcStripe />;
 const postgresql = <SiPostgresql />;
 const underConstruction = <IoIosConstruct />;
 
 export const projectsList = [
+  {
+    title: 'Horacinis Tech Store',
+    intro: 'MERN app - (Work in progress)',
+    img: horacinis_tech_store,
+    iconsTechUsed: [react, node, mongo, express, aws, materialUI],
+    links: {
+      siteLive: 'https://horacinis-tech-store.netlify.app/',
+      repoURL: 'https://github.com/HORACINIS/horacinis-tech-store-client'
+    }
+  },
   {
     title: 'El CARtel',
     intro: 'Two-sided marketplace created with Rails',
