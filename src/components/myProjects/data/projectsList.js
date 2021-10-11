@@ -16,7 +16,7 @@ import horacinis_cafe from '../images/horacinis_cafe.jpg';
 import project_coming from '../images/project_coming.jpg';
 import horacinis_tech_store from '../images/horacinis_tech_store.jpg';
 
-// icon variables for tech use - fit a maximum of 6 per project card
+// icon for techs used - fit a maximum of 6 per project card
 const techIcons = {
   'html': <ImHtmlFive />,
   'css': <SiCss3 />,
