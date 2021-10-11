@@ -34,7 +34,7 @@ const HeroCover = () => {
 
   return (
     <Paper className={classes.root} id='home' square>
-      <Grid container justify='center' direction='column'>
+      <Grid container justifyContent='center' direction='column'>
         <motion.div
           initial={{ y: 100, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
@@ -58,7 +58,7 @@ const HeroCover = () => {
           animate={{ opacity: 1 }}
           transition={{ duration: 1.5 }}>
           <Avatar alt="Horacio" src={avatar} className={classes.avatar} />
-          <Grid justify='center' item container className={classes.heroCoverIconsContainer} >
+          <Grid justifyContent='center' item container className={classes.heroCoverIconsContainer} >
             {formsOfContact.map((item) => (
               <Grid item key={item.name}>
                 <motion.div

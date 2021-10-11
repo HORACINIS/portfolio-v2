@@ -103,7 +103,7 @@ const Skills = () => {
           <Typography className={classes.mainTitle} variant='h3'>Skills</Typography>
           <Typography className={classes.proficientTitle} variant='h6'>Proficient in:</Typography>
           <motion.div animate={animation}>
-            <Grid container justify='center' alignItems='center'>
+            <Grid container justifyContent='center' alignItems='center'>
               {skillsList.map((item) => (
                 <List key={item.name}>
                   <ListItem className={classes.listItems}>

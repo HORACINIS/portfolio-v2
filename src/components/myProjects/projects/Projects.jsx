@@ -12,7 +12,7 @@ const Projects = () => {
   return (
     <Paper id='projects' className={classes.root} square>
       <Typography className={classes.title} variant='h3'>Projects</Typography>
-      <Grid container justify='center'>
+      <Grid container justifyContent='center'>
         {projectsList.map((project, index) => {
           return (
             <Grid key={index} item lg={4} md={5} sm={10} xs={12} style={{ marginLeft: '1px' }}>
