@@ -17,29 +17,48 @@ import project_coming from '../images/project_coming.jpg';
 import horacinis_tech_store from '../images/horacinis_tech_store.jpg';
 
 // icon variables for tech use - fit a maximum of 6 per project card
-const html = <ImHtmlFive />;
-const css = <SiCss3 />;
-const javaScript = <SiJavascript />;
-const react = <SiReact />;
-const express = <SiExpress />;
-const node = <DiNodejsSmall />;
-const mongo = <SiMongodb />;
-const ruby = <DiRuby />;
-const rails = <SiRubyonrails />;
-const terminal = <BsTerminalFill />;
-const bootstrap = <SiBootstrap />;
-const materialUI = <SiMaterialui />;
-const aws = <SiAmazonaws />;
-const stripe = <FaCcStripe />;
-const postgresql = <SiPostgresql />;
-const underConstruction = <IoIosConstruct />;
+const techIcons = {
+  'html': <ImHtmlFive />,
+  'css': <SiCss3 />,
+  'javaScript': <SiJavascript />,
+  'react': <SiReact />,
+  'express': <SiExpress />,
+  'node': <DiNodejsSmall />,
+  'mongo': <SiMongodb />,
+  'ruby': <DiRuby />,
+  'rails': <SiRubyonrails />,
+  'terminal': <BsTerminalFill />,
+  'bootstrap': <SiBootstrap />,
+  'materialUI': <SiMaterialui />,
+  'aws': <SiAmazonaws />,
+  'stripe': <FaCcStripe />,
+  'postgresql': <SiPostgresql />,
+  'underConstrucion': <IoIosConstruct />
+}
+
+// const html = <ImHtmlFive />;
+// const css = <SiCss3 />;
+// const javaScript = <SiJavascript />;
+// const react = <SiReact />;
+// const express = <SiExpress />;
+// const node = <DiNodejsSmall />;
+// const mongo = <SiMongodb />;
+// const ruby = <DiRuby />;
+// const rails = <SiRubyonrails />;
+// const terminal = <BsTerminalFill />;
+// const bootstrap = <SiBootstrap />;
+// const materialUI = <SiMaterialui />;
+// const aws = <SiAmazonaws />;
+// const stripe = <FaCcStripe />;
+// const postgresql = <SiPostgresql />;
+// const underConstruction = <IoIosConstruct />;
 
 export const projectsList = [
   {
     title: 'Horacinis Tech Store',
     intro: 'MERN app - (Work in progress)',
     img: horacinis_tech_store,
-    iconsTechUsed: [react, node, mongo, express, aws, materialUI],
+    iconsTechUsed: [techIcons.react, techIcons.node, techIcons.mongo, techIcons.express, techIcons.aws, techIcons.materialUI],
     links: {
       siteLive: 'https://horacinis-tech-store.netlify.app/',
       repoURL: 'https://github.com/HORACINIS/horacinis-tech-store-client',
@@ -51,7 +70,7 @@ export const projectsList = [
     intro: 'Two-sided marketplace created with Rails',
     // body: 'Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah.',
     img: el_cartel,
-    iconsTechUsed: [ruby, rails, bootstrap, aws, stripe, postgresql],
+    iconsTechUsed: [techIcons.ruby, techIcons.rails, techIcons.bootstrap, techIcons.aws, techIcons.stripe, techIcons.postgresql],
     links: {
       siteLive: 'https://elcartel.herokuapp.com/',
       repoURL: 'https://github.com/HORACINIS/el_carsales_marketplace'
@@ -62,7 +81,7 @@ export const projectsList = [
     intro: 'Front-end to-do list created with ReactJS',
     // body: 'Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah.',
     img: my_todo_list,
-    iconsTechUsed: [javaScript, react, bootstrap],
+    iconsTechUsed: [techIcons.javaScript, techIcons.react, techIcons.bootstrap],
     links: {
       siteLive: 'https://horacinis-todo.netlify.app/',
       repoURL: 'https://github.com/HORACINIS/todo-list'
@@ -73,7 +92,7 @@ export const projectsList = [
     intro: 'Front-end lyrics finder created with ReactJS',
     // body: 'Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah.',
     img: lyrics_x,
-    iconsTechUsed: [javaScript, react, bootstrap],
+    iconsTechUsed: [techIcons.javaScript, techIcons.react, techIcons.bootstrap],
     links: {
       siteLive: 'https://lyrics-finder-horacinis.netlify.app/',
       repoURL: 'https://github.com/HORACINIS/lyrics-finder'
@@ -83,7 +102,7 @@ export const projectsList = [
     title: 'Honey Homage',
     intro: 'Marketplace, created with MERN stack',
     img: honey_homage,
-    iconsTechUsed: [html, css, javaScript, react, node, mongo],
+    iconsTechUsed: [techIcons.html, techIcons.css, techIcons.javaScript, techIcons.react, techIcons.node, techIcons.mongo],
     links: {
       siteLive: 'https://peaceful-reef-34834.herokuapp.com/',
       repoURL: 'https://github.com/HORACINIS/honey_homage'
@@ -94,7 +113,7 @@ export const projectsList = [
     intro: 'Portfolio created mostly with HTML and CSS',
     // body: 'Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah.',
     img: portfolio_v1,
-    iconsTechUsed: [html, css, javaScript,],
+    iconsTechUsed: [techIcons.html, techIcons.css, techIcons.javaScript,],
     links: {
       siteLive: 'https://horacinis.netlify.app/',
       repoURL: 'https://github.com/HORACINIS/assignment_2_portfolio'
@@ -105,7 +124,7 @@ export const projectsList = [
     intro: 'Terminal app created with Ruby and a few Gems',
     // body: 'Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah.',
     img: horacinis_cafe,
-    iconsTechUsed: [ruby, terminal],
+    iconsTechUsed: [techIcons.ruby, techIcons.terminal],
     links: {
       repoURL: 'https://github.com/HORACINIS/assignment_3_terminal_app'
     }
@@ -115,7 +134,7 @@ export const projectsList = [
     intro: 'Working on more projects to add here... ',
     // body: 'Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah.',
     img: project_coming,
-    iconsTechUsed: [underConstruction],
+    iconsTechUsed: [techIcons.underConstruction],
     links: {
       // siteLive: 'https://elcartel.herokuapp.com/',
       // repoURL: 'https://github.com/HORACINIS/el_carsales_marketplace'
