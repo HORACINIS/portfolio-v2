@@ -9,7 +9,7 @@ import { IoIosConstruct } from 'react-icons/io';
 // project images - ideal size is --->  739w x 518h <---
 import el_cartel from '../images/el_cartel.jpg';
 import my_todo_list from '../images/my_todo_list.jpg';
-import lyrics_x from '../images/lyrics_x.jpg';
+import lyrics_finder_plus from '../images/lyrics_finder_plus.jpg';
 import honey_homage from '../images/honey_homage.jpg';
 import portfolio_v1 from '../images/portfolio_v1.jpg';
 import horacinis_cafe from '../images/horacinis_cafe.jpg';
@@ -35,23 +35,6 @@ const techIcons = {
   'postgresql': <SiPostgresql />,
   'underConstrucion': <IoIosConstruct />
 }
-
-// const html = <ImHtmlFive />;
-// const css = <SiCss3 />;
-// const javaScript = <SiJavascript />;
-// const react = <SiReact />;
-// const express = <SiExpress />;
-// const node = <DiNodejsSmall />;
-// const mongo = <SiMongodb />;
-// const ruby = <DiRuby />;
-// const rails = <SiRubyonrails />;
-// const terminal = <BsTerminalFill />;
-// const bootstrap = <SiBootstrap />;
-// const materialUI = <SiMaterialui />;
-// const aws = <SiAmazonaws />;
-// const stripe = <FaCcStripe />;
-// const postgresql = <SiPostgresql />;
-// const underConstruction = <IoIosConstruct />;
 
 export const projectsList = [
   {
@@ -88,13 +71,13 @@ export const projectsList = [
     }
   },
   {
-    title: 'Lyrics X',
+    title: 'Lyrics Finder Plus',
     intro: 'Front-end lyrics finder created with ReactJS',
     // body: 'Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah.',
-    img: lyrics_x,
-    iconsTechUsed: [techIcons.javaScript, techIcons.react, techIcons.bootstrap],
+    img: lyrics_finder_plus,
+    iconsTechUsed: [techIcons.javaScript, techIcons.react, techIcons.materialUI],
     links: {
-      siteLive: 'https://lyrics-finder-horacinis.netlify.app/',
+      siteLive: 'https://lyrics-finder-plus.netlify.app/',
       repoURL: 'https://github.com/HORACINIS/lyrics-finder'
     }
   },
